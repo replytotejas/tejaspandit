@@ -1,970 +1,297 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tejas Pandit — Product Manager</title>
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+TEJAS PANDIT
+	•	Work
+	•	Skills
+	•	Experience
+	•	Teardowns
+PRODUCT MANAGER · MUMBAI
+Customer problems first. Product strategy second.
+15 years turning operational complexity into product decisions — across Customer Success, SaaS platforms, MedTech, and Industrial Technology.
+B2B SaaS
+Enterprise Platform
+AI Products
+Customer-Led Discovery
+0→1 Building
+GTM Strategy
+Email me
+LinkedIn
+ABOUT
+Why Product?
+I spent 15 years watching the same failure happen in different industries: companies building features their customers didn't need, while the problems customers actually had stayed unsolved.
+As a Customer Success and Operations leader, I sat at the intersection of product gaps and customer pain — translating friction into workarounds, escalations into insights, and churn risk into what the product should have been built to do. That's product work. I just didn't have the title.
+Now I'm making it official. I bring operational depth that most PMs learn in retrospect: I know what "no resolution" feels like from the customer's side, what "spreadsheet workaround" means for a product team, and why trust — not features — is the real retention driver.
+15
+Years of customer-facing, operationally complex work
+5+
+Domains: SaaS, MedTech, Industrial Tech, AgriTech, FinTech
+ICPM
+Certified, Institute of Product Leadership — with capstone projects
+WHAT MAKES THIS PORTFOLIO DIFFERENT FROM A JUNIOR PM'S
+Operational depth
+I've lived the broken workflows that junior PMs only discover through user research. Every case in this portfolio starts from a real operational failure mode I understand viscerally.
+No-rebuild constraint
+Every solution here is scoped for limited engineering bandwidth. I don't reach for platform rewrites — I find the 20% of changes that deliver 80% of stability, because that's what actually ships.
+Trust as the metric
+Where junior PMs optimise for features, I optimise for trust. Every case study here identifies how trust breaks — and makes restoration the north star metric.
 
-  :root {
-    --ink: #1a1a1a;
-    --ink-secondary: #555;
-    --ink-muted: #888;
-    --surface: #ffffff;
-    --surface-2: #f6f5f2;
-    --surface-3: #eeece8;
-    --border: #e0ddd8;
-    --accent: #1a4f3a;
-    --accent-light: #e8f2ed;
-    --accent-mid: #2d7a55;
-    --tag-bg: #eef7f2;
-    --tag-text: #1a4f3a;
-    --divider: #d8d5d0;
-    --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  }
+FEATURED PRODUCT WORK
+Case Studies
+Product thinking exercises, certification capstones, and hiring assignments — each grounded in a specific operational problem.
+ENTERPRISE FINTECH · HIRING ASSIGNMENT
+Payment Platform Stabilisation
+Stop the bleed. Restore enterprise trust. One quarter, zero disruption.
+THE PROBLEM
+Peak traffic triggered DB lock contention → retry storms → settlement engine failures. Reconciliation mismatches weren't a reporting bug — they were a symptom of transaction data written out of chronological order. Ops team was manual middleware.
+MY APPROACH
+	•	Telemetry audit to map failure rates by client, payment rail, error code
+	•	Separated structural errors (true mismatches) from timing errors (sync lag)
+	•	Ops time-motion study to baseline manual reconciliation hours
+	•	P0 prioritisation: highest impact, minimal engineering lift
+SOLUTIONS SHIPPED
+	•	Idempotent retry logic with exponential backoff + jitter
+	•	30-min reconciliation delay buffer post peak windows
+	•	Exception triage dashboard (Retool) — Ops out of Excel
+KEY INSIGHT
+"Operational stabilisation over platform transformation — stop the bleed for internal teams, restore predictability for enterprise clients, within a single quarter, zero disruption."
+↓35%
+Sev-1/2 incidents
+↓50%
+Reconciliation mismatches
+Zero
+Duplicate transactions
+↓60%
+Manual reconciliation hours
+12 weeks
+Delivery timeline
+CONSUMER AI · PM TALENTATHON
+Swiggy AI — Rider Support Resolution
+From raising tickets to resolving issues within the same interaction.
+THE PROBLEM
+Riders with payout questions got generic AI responses, no resolution, and lost trust in the platform. The system was optimised for process, not outcomes. Four distinct gaps: Explanation, Context, Action, Ownership — each eroding trust at a different stage.
+CORE DIAGNOSIS
+Current AI was built for queries, not situations. It matched keywords and returned predefined responses. It had no decision layer — it could not validate, only redirect. Wrong financial explanations destroyed trust faster than any other failure mode.
+SOLUTION: CONTEXT-AWARE RESOLUTION SYSTEM
+	•	Detects rider intent; uses existing orders, earnings, incentive context
+	•	Explains "why" using real data — no more confusion about earnings
+	•	Confidence threshold logic: AI resolves above 90%, human escalates below
+	•	P0 focus: Earnings clarity (highest cost of misinformation)
+ROLLOUT STRATEGY
+Phase 1: MVP pilot in 1 high-volume city (Pune/Bangalore), Hindi + English + local language. Phase 2: 3–5 cities, edge case handling. Phase 3: Pan-India, voice (vernacular), proactive nudges.
+35%→60%+
+Automation rate
+↓
+Repeat queries (trust signal)
+↑ CSAT
+Post-interaction
+0
+Wrong financial explanations escalated
+B2B SAAS · PM TALENTATHON
+Knowledge Management Platform Adoption
+From knowledge library to GPS for expertise.
+THE PROBLEM
+65% of registered users abandoned the knowledge base after 30 days. Support teams still received repetitive questions that already had documented answers. The platform was a library when users needed a GPS — passive storage vs active guidance.
+ROOT CAUSE DIAGNOSIS
+	•	Discovery failures — agents couldn't find answers fast enough
+	•	Workflow friction — required leaving tools to search
+	•	Decaying trust — wrong or stale answers collapsed confidence
+	•	Authoring tax — creating knowledge was too expensive
+THREE-PILLAR STRATEGY
+	•	Workflow-native delivery — CRM/ticket plugins, intent-based snippets, 1-click insert
+	•	Knowledge capture pipeline — AI drafts from closed tickets, gap detection
+	•	Verified knowledge engine — SME approval queue, freshness signals, confidence scoring
+PRIORITISATION LOGIC
+RICE framework, weighted for time-to-value. Q1: Embedded Answer Intelligence + Trust Signals (remove search friction). Q2: Resolution → Knowledge Pipeline (automate creation). First build the GPS interface, then the GPS learning engine.
+35%→55%
+MAU target
+↓20%
+Avg handle time
+↑
+Ticket deflection rate
+↓
+Senior engineer expertise tax
+HRTECH · PM CASE CHALLENGE
+Payroll Workflow Reliability
+Prevent errors earlier. Make workflows transparent. Stop regressions. 4–6 weeks.
+THE PROBLEM
+Rising support tickets, manual Excel workarounds, and churn risk — all symptoms of broken system trust. Payroll is a financial accuracy product. When HR teams lose trust, they build parallel systems and evaluate competitors.
+FOUR FAILURE MODES
+	•	Validation vacuum — errors discovered only post-processing
+	•	Black box workflow — no explainability, no auditability
+	•	Release regressions — weekly shipping broke edge cases unnoticed
+	•	Edge-case blind spots — no guidance for mid-cycle, retroactive scenarios
+DATA-FIRST APPROACH
+	•	Support ticket clustering by stage: input, calculation, payout
+	•	Workflow drop-off funnel via Mixpanel/Amplitude
+	•	Manual correction audit — every spreadsheet = a missing product rule
+	•	Release correlation analysis — overlay tickets against release notes
+SOLUTIONS (NO REBUILD)
+	•	Wks 1–2: Pre-flight validation layer + payroll health summary
+	•	Wks 2–3: Variance & summary dashboard (black box → audit receipt)
+	•	Wks 3–6: Edge-case patches + regression test suite + feature flags
+↓40%
+Payroll error tickets
+↓50%
+Off-platform corrections
+↑85%+
+Workflow completion rate
+100%
+At-risk accounts retained
+INDUSTRIAL SAAS · PM HIRING ASSIGNMENT
+Condition Monitoring SaaS Platform
+Signal-agnostic predictive intelligence for industrial maintenance.
+DOMAIN EXPERTISE APPLIED
+Identified the technical ambiguity in the brief between 4–20mA process telemetry and Motor Current Signature Analysis — a distinction that shapes the entire product architecture. Defined the platform around MCSA (high-frequency harmonic analysis) as the defensible differentiation.
+PLATFORM ARCHITECTURE
+	•	Signal-agnostic ingestion: Vibration, MCSA, Thermal, Process via MQTT/OPC-UA
+	•	Multi-tenant design: JWT isolation, RBAC, dynamic schema for new signal types
+	•	Three-phase roadmap: Mechanical → Electrical → Unified AI with RUL models
+MARKET FRAMING
+$23B industrial predictive maintenance market by 2027. 47% of unplanned downtime avoidable. 3–5× ROI on predictive vs reactive. Buyer: Plant Manager/VP Maintenance (downtime cost, OEE). User: Reliability Engineer (early fault detection, less alert fatigue).
+SECURITY & COMPLIANCE
+AES-256 encryption at rest, tenant data isolation, full audit logs — designed for industrial enterprise requirements from day one.
+$23B
+Market by 2027
+3–5×
+ROI vs reactive maintenance
+3 phases
+Mechanical → Electrical → AI
+Multi-tenant
+Isolated, RBAC, audited
+AGRITECH · GTM CAPSTONE
+AgriBridge — GTM for Smallholder Farmers
+WhatsApp-first marketplace. Fair price transparency. No middlemen.
+MARKET CONTEXT
+110 million smallholder farmers, $500B agricultural production value, $20B Indian agtech market. Farmers receiving only 60–65% of end-market value via traditional agent routes. e-NAM reaching 17.7M farmers but still constrained by digital literacy and connectivity.
+STRATEGIC POSITIONING
+WhatsApp-first (zero learning curve), vernacular-first (Marathi, Hindi, local languages), hyper-local advisory, verified buyer listings. Competitive gap vs DeHaat (complex UI), Gramophone (limited buyer network), AgroStar (input-focused).
+GTM CHALLENGES ADDRESSED
+	•	Digital literacy barrier — WhatsApp removes app adoption friction
+	•	Trust deficit — verified buyers + transparent pricing
+	•	Remote outreach — community-led onboarding via FPOs, local Krishi Mitra
+	•	Regulatory risk — WhatsApp dependency acknowledged as threat
+VALUE PROPOSITION
+Farmers earn 85–90% of end-market value vs 60–65% via traditional routes — a 25–30 percentage point income improvement for India's most underserved economic segment.
+110M
+TAM (smallholder farmers)
+85–90%
+vs 60–65% traditional value
+WhatsApp-first
+Zero learning curve
+Vernacular
+Local language, local advisory
+HEALTHTECH · PM CAPSTONE
+CareLoop — Digital Chronic Disease Management
+HIPAA-compliant chronic care platform connecting patients, wearables, and providers.
+PROBLEM FRAMING
+60–80M chronic patients in India (diabetes/hypertension) with fragmented care: manual health logs, infrequent doctor visits (every 3 months), no real-time provider visibility. Low data integration between patient and provider.
+DISCOVERY APPROACH
+20+ patient interviews, 5 expert consultations, prototype testing (low-fidelity UI). Two primary personas: Rajesh (52, bank manager, diabetes + BP, forgets logs, overwhelmed) and Dr. Meera Kamat (diabetologist, 200+ patients, needs AI risk prediction).
+MVP CORE FEATURES
+	•	Wearable integration (BP, glucose, vitals)
+	•	Provider dashboard with abnormal value alerts
+	•	Secure messaging and basic telehealth
+	•	Daily health recommendations
+SCALE PATH
+Phase 1: 100–200 patients pilot. Phase 2: 10+ clinics, hospital network tie-ups, 5K+ active users. Phase 3: AI-driven risk prediction, insurance integration, national expansion.
+60–80M
+Target patient market
+D30 retention
+Primary MVP metric
+HIPAA
+Compliant by design
+B2B2C
+Clinic-led GTM
 
-  body {
-    font-family: 'Georgia', 'Times New Roman', serif;
-    background: var(--surface-2);
-    color: var(--ink);
-    font-size: 16px;
-    line-height: 1.7;
-  }
+TOOLKIT
+Product Management Skills
+DISCOVERY & STRATEGY
+User Interviews
+Jobs-to-be-Done
+Problem Framing
+Product Strategy
+Roadmapping
+Market Sizing
+PRIORITISATION
+RICE
+ICE
+Effort / Impact Matrix
+MoSCoW
+P0/P1/P2 Tiering
+EXECUTION
+Agile / Scrum
+User Stories
+Sprint Planning
+Stakeholder Management
+Cross-functional Coordination
+GTM & GROWTH
+GTM Strategy
+Positioning
+Competitive Analysis
+B2B2C
+Adoption
+Retention
+DATA & ANALYTICS
+Funnel Analysis
+Mixpanel / Amplitude
+A/B Testing
+Success Metrics Design
+CSAT / NPS
+AI & AUTOMATION
+AI Product Design
+Confidence Threshold Logic
+Human-in-loop Workflows
+n8n
+ChatGPT / Claude
+CUSTOMER
+Customer Success
+Journey Mapping
+Voice of Customer
+Churn Risk
+Enterprise Account Management
+DOMAINS
+B2B SaaS
+FinTech
+HRTech
+HealthTech
+Industrial IoT
+AgriTech
 
-  /* NAV */
-  nav {
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 52px;
-  }
-  nav .nav-brand { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'Arial', sans-serif; color: var(--ink); text-decoration: none; }
-  nav ul { list-style: none; display: flex; gap: 1.5rem; }
-  nav ul a { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--ink-secondary); text-decoration: none; }
-  nav ul a:hover { color: var(--accent); }
+EXPERIENCE
+15 Years of Customer-Side Learning
+The work that built the instincts behind every case study above.
 
-  /* HERO */
-  .hero {
-    background: var(--accent);
-    color: #fff;
-    padding: 5rem 2rem 4rem;
-    text-align: center;
-  }
-  .hero-eyebrow {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 1rem;
-  }
-  .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    line-height: 1.15;
-    margin-bottom: 1.25rem;
-  }
-  .hero-sub {
-    font-family: 'Arial', sans-serif;
-    font-size: 17px;
-    opacity: 0.85;
-    max-width: 560px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
-  }
-  .hero-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 2.5rem;
-  }
-  .hero-tag {
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    padding: 4px 12px;
-    border-radius: 20px;
-  }
-  .hero-contact {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .hero-contact a {
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    padding: 8px 20px;
-    border-radius: 6px;
-    transition: background 0.2s;
-  }
-  .hero-contact a:hover { background: rgba(255,255,255,0.22); }
+2025 – PRESENT
+Product Management Certification
+Institute of Product Leadership (ICPM)
+Completed case challenges for Swiggy AI, Kovai.co, Codetru Payroll, and payment platform stabilisation. Capstone projects in CareLoop (HealthTech), AgriBridge (AgriTech GTM), Wellness+ (Senior Care), and Condition Monitoring SaaS.
 
-  /* SECTION */
-  .section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
-  .section + .section { padding-top: 0; }
-  .section-divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    max-width: 900px;
-    margin: 0 auto;
-  }
+FOUNDER / BUILDER
+MyFieldServiceApp
+Self-initiated product
+Built a field service management product from scratch — discovery, MVP definition, GTM. Direct experience with 0→1 product building, user research with field operations teams, and the operational constraints of small service businesses.
 
-  .section-label {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-  }
-  .section-title {
-    font-size: 1.75rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.01em;
-  }
-  .section-intro {
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
-    color: var(--ink-secondary);
-    max-width: 620px;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-  }
+2010 – 2025
+Customer Success & Operations Leadership
+B2B SaaS · MedTech · Industrial Technology
+15 years managing complex customer relationships, operationalising support workflows, identifying product-customer fit gaps, and translating customer pain into product requirements. Managed at-risk enterprise accounts, built internal tools to replace manual spreadsheet workflows, and owned metrics now used as PM success criteria: CSAT, churn rate, adoption, time-to-resolution.
 
-  /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .about-text { font-size: 16px; line-height: 1.8; color: var(--ink); }
-  .about-text p + p { margin-top: 1rem; }
-  .about-stats { display: flex; flex-direction: column; gap: 1rem; }
-  .stat-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    box-shadow: var(--card-shadow);
-  }
-  .stat-num { font-size: 2rem; font-weight: 400; color: var(--accent); line-height: 1; }
-  .stat-label { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--ink-secondary); margin-top: 4px; }
+PRODUCT TEARDOWNS
+Coming Next
+Structured teardowns of products in my domain — focused on adoption, trust mechanics, and where the product should go next.
+Richpanel
+Customer onboarding flow, adoption mechanics, retention motions in support SaaS
+IN PROGRESS →
+Zendesk
+Knowledge management, self-service optimization, trust at scale
+PLANNED
+Intercom
+AI support workflows, customer journey design, human-in-loop balance
+PLANNED
+WhatsApp Business
+Conversational commerce, support experience, vernacular market design
+PLANNED
+Gainsight
+Customer health scoring, expansion opportunity detection, CS workflow design
+PLANNED
+Tejas Pandit  ·  Product Manager  ·  Mumbai
 
-  /* DIFFERENTIATOR STRIP */
-  .diff-strip {
-    background: var(--accent-light);
-    border-top: 1px solid #c5dfd0;
-    border-bottom: 1px solid #c5dfd0;
-    padding: 2.5rem 2rem;
-  }
-  .diff-inner {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  .diff-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.25rem;
-  }
-  .diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-  .diff-item { }
-  .diff-item strong {
-    display: block;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 0.4rem;
-  }
-  .diff-item p {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: #2d5c40;
-    line-height: 1.6;
-  }
-
-  /* PROJECT CARDS */
-  .projects-grid { display: grid; gap: 1.5rem; }
-  .project-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--card-shadow);
-  }
-  .project-card-header {
-    padding: 1.5rem 1.75rem 1rem;
-    border-bottom: 1px solid var(--surface-3);
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  .project-meta { flex: 1; }
-  .project-badge {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent-mid);
-    background: var(--tag-bg);
-    border: 1px solid #c5dfd0;
-    padding: 3px 10px;
-    border-radius: 20px;
-    white-space: nowrap;
-  }
-  .project-card h3 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 6px 0 4px;
-    letter-spacing: -0.01em;
-  }
-  .project-tagline {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: var(--ink-secondary);
-    font-style: italic;
-  }
-  .project-card-body {
-    padding: 1.25rem 1.75rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-  .project-block-label {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 0.5rem;
-  }
-  .project-block p, .project-block li {
-    font-family: 'Arial', sans-serif;
-    font-size: 13.5px;
-    color: var(--ink-secondary);
-    line-height: 1.6;
-  }
-  .project-block ul { padding-left: 1.1rem; }
-  .project-block li + li { margin-top: 4px; }
-  .project-metrics {
-    padding: 1rem 1.75rem;
-    background: var(--surface-2);
-    border-top: 1px solid var(--border);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .metric {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    color: var(--ink-secondary);
-  }
-  .metric strong { color: var(--accent); font-size: 15px; }
-
-  /* SKILLS */
-  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
-  .skill-group {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    box-shadow: var(--card-shadow);
-  }
-  .skill-group-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-  }
-  .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-  .skill-tag {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    color: var(--ink-secondary);
-    padding: 3px 9px;
-    border-radius: 4px;
-  }
-
-  /* TEARDOWNS */
-  .teardown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-  .teardown-card {
-    background: var(--surface);
-    border: 1px dashed var(--border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    opacity: 0.7;
-  }
-  .teardown-card h4 {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 4px;
-  }
-  .teardown-card p {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    color: var(--ink-muted);
-    line-height: 1.5;
-  }
-  .teardown-card .coming {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-top: 10px;
-  }
-
-  /* TIMELINE */
-  .timeline { position: relative; padding-left: 1.5rem; }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 4px;
-    top: 8px;
-    bottom: 8px;
-    width: 1px;
-    background: var(--border);
-  }
-  .timeline-item { position: relative; margin-bottom: 2rem; }
-  .timeline-dot {
-    position: absolute;
-    left: -1.5rem;
-    top: 6px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 2px solid var(--surface-2);
-  }
-  .timeline-period {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 3px;
-  }
-  .timeline-role {
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--ink);
-  }
-  .timeline-co {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: var(--ink-secondary);
-    margin-bottom: 6px;
-  }
-  .timeline-desc {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: var(--ink-secondary);
-    line-height: 1.6;
-  }
-
-  /* FOOTER */
-  footer {
-    background: var(--ink);
-    color: rgba(255,255,255,0.7);
-    text-align: center;
-    padding: 2.5rem 2rem;
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-  }
-  footer strong { color: #fff; }
-
-  /* UTILS */
-  .gap-top { margin-top: 2rem; }
-
-  @media (max-width: 640px) {
-    .about-grid { grid-template-columns: 1fr; }
-    .diff-grid { grid-template-columns: 1fr; }
-    .project-card-body { grid-template-columns: 1fr; }
-    nav ul { display: none; }
-  }
-</style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-brand">Tejas Pandit</a>
-  <ul>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#teardowns">Teardowns</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <p class="hero-eyebrow">Product Manager · Mumbai</p>
-  <h1>Customer problems first.<br>Product strategy second.</h1>
-  <p class="hero-sub">15 years turning operational complexity into product decisions — across Customer Success, SaaS platforms, MedTech, and Industrial Technology.</p>
-  <div class="hero-tags">
-    <span class="hero-tag">B2B SaaS</span>
-    <span class="hero-tag">Enterprise Platform</span>
-    <span class="hero-tag">AI Products</span>
-    <span class="hero-tag">Customer-Led Discovery</span>
-    <span class="hero-tag">0→1 Building</span>
-    <span class="hero-tag">GTM Strategy</span>
-  </div>
-  <div class="hero-contact">
-    <a href="mailto:tejas@email.com">Email me</a>
-    <a href="https://linkedin.com/in/tejas-pandit" target="_blank">LinkedIn</a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<div class="section" id="about">
-  <p class="section-label">About</p>
-  <h2 class="section-title">Why Product?</h2>
-  <div class="about-grid">
-    <div class="about-text">
-      <p>I spent 15 years watching the same failure happen in different industries: companies building features their customers didn't need, while the problems customers actually had stayed unsolved.</p>
-      <p>As a Customer Success and Operations leader, I sat at the intersection of product gaps and customer pain — translating friction into workarounds, escalations into insights, and churn risk into what the product should have been built to do. That's product work. I just didn't have the title.</p>
-      <p>Now I'm making it official. I bring operational depth that most PMs learn in retrospect: I know what "no resolution" feels like from the customer's side, what "spreadsheet workaround" means for a product team, and why trust — not features — is the real retention driver.</p>
-    </div>
-    <div class="about-stats">
-      <div class="stat-card">
-        <div class="stat-num">15</div>
-        <div class="stat-label">Years of customer-facing, operationally complex work</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">5+</div>
-        <div class="stat-label">Domains: SaaS, MedTech, Industrial Tech, AgriTech, FinTech</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num">ICPM</div>
-        <div class="stat-label">Certified, Institute of Product Leadership — with capstone projects</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- DIFFERENTIATOR -->
-<div class="diff-strip">
-  <div class="diff-inner">
-    <p class="diff-title">What makes this portfolio different from a junior PM's</p>
-    <div class="diff-grid">
-      <div class="diff-item">
-        <strong>Operational depth</strong>
-        <p>I've lived the broken workflows that junior PMs only discover through user research. Every case in this portfolio starts from a real operational failure mode I understand viscerally.</p>
-      </div>
-      <div class="diff-item">
-        <strong>No-rebuild constraint</strong>
-        <p>Every solution here is scoped for limited engineering bandwidth. I don't reach for platform rewrites — I find the 20% of changes that deliver 80% of stability, because that's what actually ships.</p>
-      </div>
-      <div class="diff-item">
-        <strong>Trust as the metric</strong>
-        <p>Where junior PMs optimise for features, I optimise for trust. Every case study here identifies how trust breaks — and makes restoration the north star metric.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- PROJECTS -->
-<hr class="section-divider">
-<div class="section" id="work">
-  <p class="section-label">Featured Product Work</p>
-  <h2 class="section-title">Case Studies</h2>
-  <p class="section-intro">Product thinking exercises, certification capstones, and hiring assignments — each grounded in a specific operational problem.</p>
-
-  <div class="projects-grid">
-
-    <!-- CARD 1: Payment Platform -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">Enterprise Fintech · Hiring Assignment</span>
-          <h3>Payment Platform Stabilisation</h3>
-          <p class="project-tagline">Stop the bleed. Restore enterprise trust. One quarter, zero disruption.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Peak traffic triggered DB lock contention → retry storms → settlement engine failures. Reconciliation mismatches weren't a reporting bug — they were a symptom of transaction data written out of chronological order. Ops team was manual middleware.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">My approach</p>
-          <ul>
-            <li>Telemetry audit to map failure rates by client, payment rail, error code</li>
-            <li>Separated structural errors (true mismatches) from timing errors (sync lag)</li>
-            <li>Ops time-motion study to baseline manual reconciliation hours</li>
-            <li>P0 prioritisation: highest impact, minimal engineering lift</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Solutions shipped</p>
-          <ul>
-            <li>Idempotent retry logic with exponential backoff + jitter</li>
-            <li>30-min reconciliation delay buffer post peak windows</li>
-            <li>Exception triage dashboard (Retool) — Ops out of Excel</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Key insight</p>
-          <p>"Operational stabilisation over platform transformation — stop the bleed for internal teams, restore predictability for enterprise clients, within a single quarter, zero disruption."</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>↓35%</strong><br>Sev-1/2 incidents</div>
-        <div class="metric"><strong>↓50%</strong><br>Reconciliation mismatches</div>
-        <div class="metric"><strong>Zero</strong><br>Duplicate transactions</div>
-        <div class="metric"><strong>↓60%</strong><br>Manual reconciliation hours</div>
-        <div class="metric"><strong>12 weeks</strong><br>Delivery timeline</div>
-      </div>
-    </div>
-
-    <!-- CARD 2: Swiggy AI -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">Consumer AI · PM Talentathon</span>
-          <h3>Swiggy AI — Rider Support Resolution</h3>
-          <p class="project-tagline">From raising tickets to resolving issues within the same interaction.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Riders with payout questions got generic AI responses, no resolution, and lost trust in the platform. The system was optimised for process, not outcomes. Four distinct gaps: Explanation, Context, Action, Ownership — each eroding trust at a different stage.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Core diagnosis</p>
-          <p>Current AI was built for queries, not situations. It matched keywords and returned predefined responses. It had no decision layer — it could not validate, only redirect. Wrong financial explanations destroyed trust faster than any other failure mode.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Solution: Context-Aware Resolution System</p>
-          <ul>
-            <li>Detects rider intent; uses existing orders, earnings, incentive context</li>
-            <li>Explains "why" using real data — no more confusion about earnings</li>
-            <li>Confidence threshold logic: AI resolves above 90%, human escalates below</li>
-            <li>P0 focus: Earnings clarity (highest cost of misinformation)</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Rollout strategy</p>
-          <p>Phase 1: MVP pilot in 1 high-volume city (Pune/Bangalore), Hindi + English + local language. Phase 2: 3–5 cities, edge case handling. Phase 3: Pan-India, voice (vernacular), proactive nudges.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>35%→60%+</strong><br>Automation rate</div>
-        <div class="metric"><strong>↓</strong><br>Repeat queries (trust signal)</div>
-        <div class="metric"><strong>↑ CSAT</strong><br>Post-interaction</div>
-        <div class="metric"><strong>0</strong><br>Wrong financial explanations escalated</div>
-      </div>
-    </div>
-
-    <!-- CARD 3: Kovai KMS -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">B2B SaaS · PM Talentathon</span>
-          <h3>Knowledge Management Platform Adoption</h3>
-          <p class="project-tagline">From knowledge library to GPS for expertise.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>65% of registered users abandoned the knowledge base after 30 days. Support teams still received repetitive questions that already had documented answers. The platform was a library when users needed a GPS — passive storage vs active guidance.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Root cause diagnosis</p>
-          <ul>
-            <li>Discovery failures — agents couldn't find answers fast enough</li>
-            <li>Workflow friction — required leaving tools to search</li>
-            <li>Decaying trust — wrong or stale answers collapsed confidence</li>
-            <li>Authoring tax — creating knowledge was too expensive</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Three-pillar strategy</p>
-          <ul>
-            <li>Workflow-native delivery — CRM/ticket plugins, intent-based snippets, 1-click insert</li>
-            <li>Knowledge capture pipeline — AI drafts from closed tickets, gap detection</li>
-            <li>Verified knowledge engine — SME approval queue, freshness signals, confidence scoring</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Prioritisation logic</p>
-          <p>RICE framework, weighted for time-to-value. Q1: Embedded Answer Intelligence + Trust Signals (remove search friction). Q2: Resolution → Knowledge Pipeline (automate creation). First build the GPS interface, then the GPS learning engine.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>35%→55%</strong><br>MAU target</div>
-        <div class="metric"><strong>↓20%</strong><br>Avg handle time</div>
-        <div class="metric"><strong>↑</strong><br>Ticket deflection rate</div>
-        <div class="metric"><strong>↓</strong><br>Senior engineer expertise tax</div>
-      </div>
-    </div>
-
-    <!-- CARD 4: Payroll Workflow -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">HRTech · PM Case Challenge</span>
-          <h3>Payroll Workflow Reliability</h3>
-          <p class="project-tagline">Prevent errors earlier. Make workflows transparent. Stop regressions. 4–6 weeks.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Rising support tickets, manual Excel workarounds, and churn risk — all symptoms of broken system trust. Payroll is a financial accuracy product. When HR teams lose trust, they build parallel systems and evaluate competitors.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Four failure modes</p>
-          <ul>
-            <li>Validation vacuum — errors discovered only post-processing</li>
-            <li>Black box workflow — no explainability, no auditability</li>
-            <li>Release regressions — weekly shipping broke edge cases unnoticed</li>
-            <li>Edge-case blind spots — no guidance for mid-cycle, retroactive scenarios</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Data-first approach</p>
-          <ul>
-            <li>Support ticket clustering by stage: input, calculation, payout</li>
-            <li>Workflow drop-off funnel via Mixpanel/Amplitude</li>
-            <li>Manual correction audit — every spreadsheet = a missing product rule</li>
-            <li>Release correlation analysis — overlay tickets against release notes</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Solutions (no rebuild)</p>
-          <ul>
-            <li>Wks 1–2: Pre-flight validation layer + payroll health summary</li>
-            <li>Wks 2–3: Variance & summary dashboard (black box → audit receipt)</li>
-            <li>Wks 3–6: Edge-case patches + regression test suite + feature flags</li>
-          </ul>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>↓40%</strong><br>Payroll error tickets</div>
-        <div class="metric"><strong>↓50%</strong><br>Off-platform corrections</div>
-        <div class="metric"><strong>↑85%+</strong><br>Workflow completion rate</div>
-        <div class="metric"><strong>100%</strong><br>At-risk accounts retained</div>
-      </div>
-    </div>
-
-    <!-- CARD 5: Condition Monitoring -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">Industrial SaaS · PM Hiring Assignment</span>
-          <h3>Condition Monitoring SaaS Platform</h3>
-          <p class="project-tagline">Signal-agnostic predictive intelligence for industrial maintenance.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">Domain expertise applied</p>
-          <p>Identified the technical ambiguity in the brief between 4–20mA process telemetry and Motor Current Signature Analysis — a distinction that shapes the entire product architecture. Defined the platform around MCSA (high-frequency harmonic analysis) as the defensible differentiation.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Platform architecture</p>
-          <ul>
-            <li>Signal-agnostic ingestion: Vibration, MCSA, Thermal, Process via MQTT/OPC-UA</li>
-            <li>Multi-tenant design: JWT isolation, RBAC, dynamic schema for new signal types</li>
-            <li>Three-phase roadmap: Mechanical → Electrical → Unified AI with RUL models</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Market framing</p>
-          <p>$23B industrial predictive maintenance market by 2027. 47% of unplanned downtime avoidable. 3–5× ROI on predictive vs reactive. Buyer: Plant Manager/VP Maintenance (downtime cost, OEE). User: Reliability Engineer (early fault detection, less alert fatigue).</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Security & compliance</p>
-          <p>AES-256 encryption at rest, tenant data isolation, full audit logs — designed for industrial enterprise requirements from day one.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>$23B</strong><br>Market by 2027</div>
-        <div class="metric"><strong>3–5×</strong><br>ROI vs reactive maintenance</div>
-        <div class="metric"><strong>3 phases</strong><br>Mechanical → Electrical → AI</div>
-        <div class="metric"><strong>Multi-tenant</strong><br>Isolated, RBAC, audited</div>
-      </div>
-    </div>
-
-    <!-- CARD 6: AgriBridge -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">AgriTech · GTM Capstone</span>
-          <h3>AgriBridge — GTM for Smallholder Farmers</h3>
-          <p class="project-tagline">WhatsApp-first marketplace. Fair price transparency. No middlemen.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">Market context</p>
-          <p>110 million smallholder farmers, $500B agricultural production value, $20B Indian agtech market. Farmers receiving only 60–65% of end-market value via traditional agent routes. e-NAM reaching 17.7M farmers but still constrained by digital literacy and connectivity.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Strategic positioning</p>
-          <p>WhatsApp-first (zero learning curve), vernacular-first (Marathi, Hindi, local languages), hyper-local advisory, verified buyer listings. Competitive gap vs DeHaat (complex UI), Gramophone (limited buyer network), AgroStar (input-focused).</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">GTM challenges addressed</p>
-          <ul>
-            <li>Digital literacy barrier — WhatsApp removes app adoption friction</li>
-            <li>Trust deficit — verified buyers + transparent pricing</li>
-            <li>Remote outreach — community-led onboarding via FPOs, local Krishi Mitra</li>
-            <li>Regulatory risk — WhatsApp dependency acknowledged as threat</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Value proposition</p>
-          <p>Farmers earn 85–90% of end-market value vs 60–65% via traditional routes — a 25–30 percentage point income improvement for India's most underserved economic segment.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>110M</strong><br>TAM (smallholder farmers)</div>
-        <div class="metric"><strong>85–90%</strong><br>vs 60–65% traditional value</div>
-        <div class="metric"><strong>WhatsApp-first</strong><br>Zero learning curve</div>
-        <div class="metric"><strong>Vernacular</strong><br>Local language, local advisory</div>
-      </div>
-    </div>
-
-    <!-- CARD 7: CareLoop -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">HealthTech · PM Capstone</span>
-          <h3>CareLoop — Digital Chronic Disease Management</h3>
-          <p class="project-tagline">HIPAA-compliant chronic care platform connecting patients, wearables, and providers.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">Problem framing</p>
-          <p>60–80M chronic patients in India (diabetes/hypertension) with fragmented care: manual health logs, infrequent doctor visits (every 3 months), no real-time provider visibility. Low data integration between patient and provider.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Discovery approach</p>
-          <p>20+ patient interviews, 5 expert consultations, prototype testing (low-fidelity UI). Two primary personas: Rajesh (52, bank manager, diabetes + BP, forgets logs, overwhelmed) and Dr. Meera Kamat (diabetologist, 200+ patients, needs AI risk prediction).</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">MVP core features</p>
-          <ul>
-            <li>Wearable integration (BP, glucose, vitals)</li>
-            <li>Provider dashboard with abnormal value alerts</li>
-            <li>Secure messaging and basic telehealth</li>
-            <li>Daily health recommendations</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Scale path</p>
-          <p>Phase 1: 100–200 patients pilot. Phase 2: 10+ clinics, hospital network tie-ups, 5K+ active users. Phase 3: AI-driven risk prediction, insurance integration, national expansion.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>60–80M</strong><br>Target patient market</div>
-        <div class="metric"><strong>D30 retention</strong><br>Primary MVP metric</div>
-        <div class="metric"><strong>HIPAA</strong><br>Compliant by design</div>
-        <div class="metric"><strong>B2B2C</strong><br>Clinic-led GTM</div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- SKILLS -->
-<hr class="section-divider">
-<div class="section" id="skills">
-  <p class="section-label">Toolkit</p>
-  <h2 class="section-title">Product Management Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-group">
-      <p class="skill-group-title">Discovery & Strategy</p>
-      <div class="skill-tags">
-        <span class="skill-tag">User Interviews</span>
-        <span class="skill-tag">Jobs-to-be-Done</span>
-        <span class="skill-tag">Problem Framing</span>
-        <span class="skill-tag">Product Strategy</span>
-        <span class="skill-tag">Roadmapping</span>
-        <span class="skill-tag">Market Sizing</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Prioritisation</p>
-      <div class="skill-tags">
-        <span class="skill-tag">RICE</span>
-        <span class="skill-tag">ICE</span>
-        <span class="skill-tag">Effort / Impact Matrix</span>
-        <span class="skill-tag">MoSCoW</span>
-        <span class="skill-tag">P0/P1/P2 Tiering</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Execution</p>
-      <div class="skill-tags">
-        <span class="skill-tag">Agile / Scrum</span>
-        <span class="skill-tag">User Stories</span>
-        <span class="skill-tag">Sprint Planning</span>
-        <span class="skill-tag">Stakeholder Management</span>
-        <span class="skill-tag">Cross-functional Coordination</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">GTM & Growth</p>
-      <div class="skill-tags">
-        <span class="skill-tag">GTM Strategy</span>
-        <span class="skill-tag">Positioning</span>
-        <span class="skill-tag">Competitive Analysis</span>
-        <span class="skill-tag">B2B2C</span>
-        <span class="skill-tag">Adoption</span>
-        <span class="skill-tag">Retention</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Data & Analytics</p>
-      <div class="skill-tags">
-        <span class="skill-tag">Funnel Analysis</span>
-        <span class="skill-tag">Mixpanel / Amplitude</span>
-        <span class="skill-tag">A/B Testing</span>
-        <span class="skill-tag">Success Metrics Design</span>
-        <span class="skill-tag">CSAT / NPS</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">AI & Automation</p>
-      <div class="skill-tags">
-        <span class="skill-tag">AI Product Design</span>
-        <span class="skill-tag">Confidence Threshold Logic</span>
-        <span class="skill-tag">Human-in-loop Workflows</span>
-        <span class="skill-tag">n8n</span>
-        <span class="skill-tag">ChatGPT / Claude</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Customer</p>
-      <div class="skill-tags">
-        <span class="skill-tag">Customer Success</span>
-        <span class="skill-tag">Journey Mapping</span>
-        <span class="skill-tag">Voice of Customer</span>
-        <span class="skill-tag">Churn Risk</span>
-        <span class="skill-tag">Enterprise Account Management</span>
-      </div>
-    </div>
-    <div class="skill-group">
-      <p class="skill-group-title">Domains</p>
-      <div class="skill-tags">
-        <span class="skill-tag">B2B SaaS</span>
-        <span class="skill-tag">FinTech</span>
-        <span class="skill-tag">HRTech</span>
-        <span class="skill-tag">HealthTech</span>
-        <span class="skill-tag">Industrial IoT</span>
-        <span class="skill-tag">AgriTech</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- EXPERIENCE -->
-<hr class="section-divider">
-<div class="section" id="experience">
-  <p class="section-label">Experience</p>
-  <h2 class="section-title">15 Years of Customer-Side Learning</h2>
-  <p class="section-intro">The work that built the instincts behind every case study above.</p>
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <p class="timeline-period">2025 – Present</p>
-      <p class="timeline-role">Product Management Certification</p>
-      <p class="timeline-co">Institute of Product Leadership (ICPM)</p>
-      <p class="timeline-desc">Completed case challenges for Swiggy AI, Kovai.co, Codetru Payroll, and payment platform stabilisation. Capstone projects in CareLoop (HealthTech), AgriBridge (AgriTech GTM), Wellness+ (Senior Care), and Condition Monitoring SaaS.</p>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <p class="timeline-period">Founder / Builder</p>
-      <p class="timeline-role">MyFieldServiceApp</p>
-      <p class="timeline-co">Self-initiated product</p>
-      <p class="timeline-desc">Built a field service management product from scratch — discovery, MVP definition, GTM. Direct experience with 0→1 product building, user research with field operations teams, and the operational constraints of small service businesses.</p>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <p class="timeline-period">2010 – 2025</p>
-      <p class="timeline-role">Customer Success & Operations Leadership</p>
-      <p class="timeline-co">B2B SaaS · MedTech · Industrial Technology</p>
-      <p class="timeline-desc">15 years managing complex customer relationships, operationalising support workflows, identifying product-customer fit gaps, and translating customer pain into product requirements. Managed at-risk enterprise accounts, built internal tools to replace manual spreadsheet workflows, and owned metrics now used as PM success criteria: CSAT, churn rate, adoption, time-to-resolution.</p>
-    </div>
-  </div>
-</div>
-
-<!-- TEARDOWNS (PLANNED) -->
-<hr class="section-divider">
-<div class="section" id="teardowns">
-  <p class="section-label">Product Teardowns</p>
-  <h2 class="section-title">Coming Next</h2>
-  <p class="section-intro">Structured teardowns of products in my domain — focused on adoption, trust mechanics, and where the product should go next.</p>
-  <div class="teardown-grid">
-    <div class="teardown-card">
-      <h4>Richpanel</h4>
-      <p>Customer onboarding flow, adoption mechanics, retention motions in support SaaS</p>
-      <p class="coming">In progress →</p>
-    </div>
-    <div class="teardown-card">
-      <h4>Zendesk</h4>
-      <p>Knowledge management, self-service optimization, trust at scale</p>
-      <p class="coming">Planned</p>
-    </div>
-    <div class="teardown-card">
-      <h4>Intercom</h4>
-      <p>AI support workflows, customer journey design, human-in-loop balance</p>
-      <p class="coming">Planned</p>
-    </div>
-    <div class="teardown-card">
-      <h4>WhatsApp Business</h4>
-      <p>Conversational commerce, support experience, vernacular market design</p>
-      <p class="coming">Planned</p>
-    </div>
-    <div class="teardown-card">
-      <h4>Gainsight</h4>
-      <p>Customer health scoring, expansion opportunity detection, CS workflow design</p>
-      <p class="coming">Planned</p>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <strong>Tejas Pandit</strong> &nbsp;·&nbsp; Product Manager &nbsp;·&nbsp; Mumbai<br><br>
-  Customer-led product builder. 15 years of operational depth, now building products.
-</footer>
-
-</body>
-</html>
+Customer-led product builder. 15 years of operational depth, now building products.
