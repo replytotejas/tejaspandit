@@ -125,15 +125,71 @@ Customer Email
 </ul>
 </div>
 
-<h2>Screenshots</h2>
+<h2>Workflow & Product Screenshots</h2>
+
 <div class="card">
-<p>Replace the placeholders below after creating an <strong>assets</strong> folder.</p>
-<ul>
-<li>assets/workflow.png</li>
-<li>assets/prompt.png</li>
-<li>assets/slack-config.png</li>
-<li>assets/slack-output.png</li>
-</ul>
+    <h3>1. Workflow Architecture</h3>
+
+    <p>
+        The automation begins by monitoring incoming customer emails using Gmail.
+        Each email is passed through the AI Decision Engine, which classifies the
+        incident before publishing a structured operational alert to Slack.
+    </p>
+
+    <img src="assets/workflow.png"
+         alt="AI Incident Intelligence Workflow"
+         style="width:100%; border-radius:10px; border:1px solid #ddd; margin-top:20px;">
+
+</div>
+
+
+<div class="card">
+    <h3>2. AI Decision Engine Prompt</h3>
+
+    <p>
+        The prompt contains the operational logic used to classify incidents,
+        determine business impact, assign ownership, recommend SLAs, and generate
+        executive-ready summaries.
+    </p>
+
+    <img src="assets/prompt.png"
+         alt="OpenAI Prompt"
+         style="width:100%; border-radius:10px; border:1px solid #ddd; margin-top:20px;">
+
+</div>
+
+
+<div class="card">
+    <h3>3. Slack Integration</h3>
+
+    <p>
+        Once AI processing is complete, the structured incident is automatically
+        delivered to Slack, ensuring operational teams receive consistent and
+        actionable alerts without manual intervention.
+    </p>
+
+    <img src="assets/slack-config.png"
+         alt="Slack Configuration"
+         style="width:100%; border-radius:10px; border:1px solid #ddd; margin-top:20px;">
+
+</div>
+
+
+<div class="card">
+    <h3>4. AI-Generated Incident Brief</h3>
+
+    <p>
+        This is the final output produced by the platform. Within seconds of
+        receiving a customer email, the AI converts unstructured information into
+        a structured incident brief containing severity, business impact,
+        ownership, SLA, recommended actions, executive summary, and searchable
+        tags.
+    </p>
+
+    <img src="assets/slack-output.png"
+         alt="AI Generated Incident Brief"
+         style="width:100%; border-radius:10px; border:1px solid #ddd; margin-top:20px;">
+
 </div>
 
 </main>
