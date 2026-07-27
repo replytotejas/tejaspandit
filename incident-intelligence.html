@@ -144,20 +144,33 @@ Customer Email
 
 
 <div class="card">
+
     <h3>2. AI Decision Engine Prompt</h3>
 
     <p>
-        The prompt contains the operational logic used to classify incidents,
-        determine business impact, assign ownership, recommend SLAs, and generate
-        executive-ready summaries.
+        The AI Decision Engine is powered by a structured operational prompt rather than
+        a simple summarization request. The prompt defines incident severity criteria,
+        ownership rules, SLA mapping, business impact assessment, executive summaries,
+        and response formatting to ensure consistent decision-making across all incoming
+        customer emails.
     </p>
 
     <img src="prompt.png"
-         alt="OpenAI Prompt"
-         style="width:100%; border-radius:10px; border:1px solid #ddd; margin-top:20px;">
+         alt="AI Decision Engine Prompt"
+         style="width:100%; border-radius:10px; border:1px solid #ddd; margin:25px 0;">
+
+    <h4>Prompt Design Highlights</h4>
+
+    <ul>
+        <li>Assigns every incident a single priority (P0–P3).</li>
+        <li>Determines business impact based on customer context.</li>
+        <li>Recommends the owning team automatically.</li>
+        <li>Maps each incident to a predefined SLA.</li>
+        <li>Generates executive-ready summaries.</li>
+        <li>Produces a Slack-ready incident report.</li>
+    </ul>
 
 </div>
-
 
 <div class="card">
     <h3>3. Slack Integration</h3>
