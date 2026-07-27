@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Incident Intelligence Platform | Tejas Pandit</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f6f5f2;color:#222;line-height:1.7}
+header{background:#1a4f3a;color:#fff;padding:70px 30px}
+main{max-width:980px;margin:auto;padding:40px 24px}
+h1{font-size:48px;margin:0 0 10px}
+h2{margin-top:60px;color:#1a4f3a;border-bottom:2px solid #ddd;padding-bottom:8px}
+.tag{display:inline-block;background:#e8f2ed;color:#1a4f3a;padding:6px 12px;border-radius:20px;margin:4px;font-size:13px}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:24px;margin:24px 0}
+pre{background:#111;color:#0f0;padding:18px;border-radius:8px;overflow:auto}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #ddd;padding:10px;text-align:left}
+th{background:#f3f3f3}
+footer{background:#222;color:#ddd;text-align:center;padding:30px;margin-top:60px}
+a.button{display:inline-block;margin-top:20px;background:#1a4f3a;color:#fff;text-decoration:none;padding:12px 20px;border-radius:6px}
+</style>
+</head>
+<body>
+<header>
+<div class="tag">AI Product</div>
+<h1>AI Incident Intelligence Platform</h1>
+<p>An AI-powered incident triage platform that transforms customer emails into structured operational intelligence.</p>
+<a class="button" href="index.html">← Back to Portfolio</a>
+</header>
+
+<main>
+
+<h2>Business Problem</h2>
+<div class="card">
+<p>Support teams manually read customer emails, determine severity, identify ownership, assign SLAs, and notify the right teams. This process is slow, inconsistent, and difficult to scale.</p>
+</div>
+
+<h2>Product Vision</h2>
+<div class="card">
+<p>Build an AI-first incident intelligence engine that analyzes every incoming customer email, determines business impact, classifies severity (P0–P3), recommends ownership, assigns an SLA, and generates an executive-ready Slack alert before the first human reviews the message.</p>
+</div>
+
+<h2>Solution Architecture</h2>
+<div class="card">
+<pre>
+Customer Email
+      │
+      ▼
+ Gmail Trigger
+      │
+      ▼
+ AI Incident Intelligence Engine
+ ├── Intent Detection
+ ├── Severity Classification
+ ├── Business Impact
+ ├── Team Recommendation
+ ├── SLA Assignment
+ ├── Executive Summary
+ └── Immediate Actions
+      │
+      ▼
+ Slack Operations Channel
+</pre>
+</div>
+
+<h2>Workflow</h2>
+<div class="card">
+<ol>
+<li>Customer sends an email.</li>
+<li>n8n Gmail Trigger detects the message.</li>
+<li>OpenAI evaluates subject and body using operational rules.</li>
+<li>The AI classifies P0–P3 severity.</li>
+<li>The AI recommends ownership and SLA.</li>
+<li>A structured Slack alert is posted for the operations team.</li>
+</ol>
+</div>
+
+<h2>Prompt Engineering Highlights</h2>
+<div class="card">
+<ul>
+<li>Fixed four-level priority model (P0–P3).</li>
+<li>Single owning team to avoid ambiguity.</li>
+<li>Strict SLA mapping.</li>
+<li>Executive summary limited to two sentences.</li>
+<li>Maximum four immediate action items.</li>
+<li>Deterministic Slack formatting.</li>
+</ul>
+</div>
+
+<h2>Technology Stack</h2>
+<div class="card">
+<table>
+<tr><th>Layer</th><th>Technology</th></tr>
+<tr><td>Workflow</td><td>n8n</td></tr>
+<tr><td>Email</td><td>Gmail Trigger</td></tr>
+<tr><td>AI Engine</td><td>OpenAI GPT</td></tr>
+<tr><td>Notifications</td><td>Slack</td></tr>
+<tr><td>Prompt Logic</td><td>Custom Operational Prompt</td></tr>
+</table>
+</div>
+
+<h2>Roadmap</h2>
+<div class="card">
+<ul>
+<li>CRM enrichment</li>
+<li>Renewal risk detection</li>
+<li>Customer health integration</li>
+<li>Jira automation</li>
+<li>Zendesk synchronization</li>
+<li>Executive dashboards</li>
+<li>Incident trend analytics</li>
+<li>AI-generated postmortems</li>
+</ul>
+</div>
+
+<h2>Business Value</h2>
+<div class="card">
+<ul>
+<li>Faster incident recognition</li>
+<li>Consistent prioritization</li>
+<li>Reduced manual triage</li>
+<li>Improved cross-functional collaboration</li>
+<li>Executive-ready operational summaries</li>
+</ul>
+</div>
+
+<h2>Screenshots</h2>
+<div class="card">
+<p>Replace the placeholders below after creating an <strong>assets</strong> folder.</p>
+<ul>
+<li>assets/workflow.png</li>
+<li>assets/prompt.png</li>
+<li>assets/slack-config.png</li>
+<li>assets/slack-output.png</li>
+</ul>
+</div>
+
+</main>
+<footer>
+AI Incident Intelligence Platform • Portfolio Case Study • Tejas Pandit
+</footer>
+</body>
+</html>
