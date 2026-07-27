@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Customer Intelligence Platform | Tejas Pandit</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f6f5f2;color:#222;line-height:1.7}
+header{background:#1a4f3a;color:#fff;padding:70px 30px}
+main{max-width:980px;margin:auto;padding:40px 24px}
+h1{font-size:48px;margin:0 0 10px}
+h2{margin-top:60px;color:#1a4f3a;border-bottom:2px solid #ddd;padding-bottom:8px}
+.tag{display:inline-block;background:#e8f2ed;color:#1a4f3a;padding:6px 12px;border-radius:20px;margin:4px;font-size:13px}
+.card{background:#fff;border:1px solid #ddd;border-radius:12px;padding:24px;margin:24px 0}
+pre{background:#111;color:#0f0;padding:18px;border-radius:8px;overflow:auto}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #ddd;padding:10px;text-align:left}
+th{background:#f3f3f3}
+footer{background:#222;color:#ddd;text-align:center;padding:30px;margin-top:60px}
+a.button{display:inline-block;margin-top:20px;background:#1a4f3a;color:#fff;text-decoration:none;padding:12px 20px;border-radius:6px}
+</style>
+</head>
+<body>
+<header>
+<div class="tag">AI Product</div>
+<h1>AI Customer Intelligence Platform</h1>
+<p>An AI-powered Customer Success Operations platform that analyzes an entire customer portfolio, identifies renewal risk, prioritizes executive attention, and delivers AI-generated customer intelligence reports to Slack.</p>
+<a class="button" href="index.html">← Back to Portfolio</a>
+</header>
+
+<main>
+
+<h2>Business Problem</h2>
+<div class="card">
+<p>Customer Success teams spend hours reviewing health scores, support trends, product adoption, ARR, executive relationships, and renewal dates to determine which accounts require attention. Manual portfolio reviews are slow, inconsistent, and reactive.</p>
+</div>
+
+<h2>Product Vision</h2>
+<div class="card">
+<p>Build an AI-powered Customer Intelligence Engine that analyzes an entire customer portfolio in a single workflow, identifies renewal risk, recommends executive attention, highlights expansion opportunities, and delivers a daily executive briefing before the team starts work.</p>
+</div>
+
+<h2>Solution Architecture</h2>
+<div class="card"><pre>
+Customer Portfolio
+      │
+      ▼
+ Google Sheets
+      │
+      ▼
+ Aggregate Customer Records
+      │
+      ▼
+ AI Customer Intelligence Engine
+ ├── Renewal Risk
+ ├── Executive Attention
+ ├── Portfolio Prioritization
+ ├── Expansion Opportunity
+ ├── Executive Summary
+ └── Recommended Next Actions
+      │
+      ▼
+ Slack Executive Brief
+</pre></div>
+
+<h2>Workflow</h2>
+<div class="card">
+<ol>
+<li>Scheduled workflow starts automatically.</li>
+<li>Customer portfolio is read from Google Sheets.</li>
+<li>All customer records are aggregated into one AI request.</li>
+<li>GPT analyzes the complete portfolio.</li>
+<li>Highest priority accounts are identified.</li>
+<li>An executive-ready Slack report is generated.</li>
+</ol>
+</div>
+
+<h2>Prompt Engineering Highlights</h2>
+<div class="card">
+<ul>
+<li>Single portfolio-wide AI analysis.</li>
+<li>Renewal Risk classification.</li>
+<li>Executive Attention recommendation.</li>
+<li>Expansion Opportunity detection.</li>
+<li>Maximum five priority customers.</li>
+<li>Consistent executive-ready formatting.</li>
+</ul>
+</div>
+
+<h2>Technology Stack</h2>
+<div class="card">
+<table>
+<tr><th>Layer</th><th>Technology</th></tr>
+<tr><td>Workflow</td><td>n8n</td></tr>
+<tr><td>Customer Data</td><td>Google Sheets</td></tr>
+<tr><td>AI Engine</td><td>OpenAI GPT</td></tr>
+<tr><td>Notifications</td><td>Slack</td></tr>
+<tr><td>Prompt Logic</td><td>Executive Portfolio Analysis Prompt</td></tr>
+</table>
+</div>
+
+<h2>Roadmap</h2>
+<div class="card"><ul>
+<li>Salesforce Integration</li>
+<li>HubSpot Integration</li>
+<li>Gainsight Health Scores</li>
+<li>Customer 360 Dashboard</li>
+<li>Jira Escalations</li>
+<li>Executive Email Reports</li>
+<li>AI Success Copilot</li>
+<li>Predictive Churn Modeling</li>
+</ul></div>
+
+<h2>Business Value</h2>
+<div class="card"><ul>
+<li>Daily portfolio visibility</li>
+<li>Earlier renewal risk detection</li>
+<li>Executive prioritization</li>
+<li>Reduced manual account reviews</li>
+<li>AI-powered customer intelligence</li>
+</ul></div>
+
+<h2>Workflow & Product Screenshots</h2>
+
+<div class="card"><h3>1. Workflow Architecture</h3>
+<p>The workflow reads the customer portfolio from Google Sheets, aggregates all customer records into a single AI request, and automatically posts an executive summary to Slack.</p>
+<img src="workflow.png" style="width:100%;border-radius:10px;border:1px solid #ddd;margin-top:20px;"></div>
+
+<div class="card"><h3>2. AI Portfolio Analysis Prompt</h3>
+<p>The prompt instructs GPT to evaluate the entire portfolio, identify renewal risk, executive attention, recommended next actions, and expansion opportunities while returning only executive-ready insights.</p>
+<img src="prompt.png" style="width:100%;border-radius:10px;border:1px solid #ddd;margin:25px 0;">
+<ul>
+<li>Portfolio-wide analysis</li>
+<li>Renewal Risk scoring</li>
+<li>Executive Attention flag</li>
+<li>Expansion Opportunity identification</li>
+<li>Executive summaries</li>
+<li>Slack-ready output</li>
+</ul></div>
+
+<div class="card"><h3>3. Slack Integration</h3>
+<p>The completed portfolio review is automatically delivered to Slack, giving leadership a prioritized list of customers requiring immediate attention.</p>
+<img src="slack-config.png" style="width:100%;border-radius:10px;border:1px solid #ddd;margin:25px 0;">
+<ul>
+<li>Automatic daily reporting</li>
+<li>Executive-ready formatting</li>
+<li>One AI call for the full portfolio</li>
+<li>Immediate visibility</li>
+</ul></div>
+
+<div class="card"><h3>4. AI-Generated Executive Customer Brief</h3>
+<p>The final output highlights only the customers requiring executive attention, reducing hours of manual portfolio review into a concise AI-generated executive briefing.</p>
+<img src="slack-output.png" style="width:100%;border-radius:10px;border:1px solid #ddd;margin:25px 0;">
+<table>
+<tr><th>Capability</th><th>Business Value</th></tr>
+<tr><td>Renewal Risk</td><td>Identifies customers likely to churn.</td></tr>
+<tr><td>Executive Attention</td><td>Flags accounts requiring leadership involvement.</td></tr>
+<tr><td>Expansion Opportunity</td><td>Surfaces growth opportunities.</td></tr>
+<tr><td>Recommended Actions</td><td>Provides actionable next steps.</td></tr>
+<tr><td>Executive Summary</td><td>Summarizes each priority account in seconds.</td></tr>
+<tr><td>Portfolio Prioritization</td><td>Focuses teams on the highest-value accounts.</td></tr>
+<tr><td>AI Daily Brief</td><td>Delivers one executive report instead of reviewing every customer.</td></tr>
+</table>
+</div>
+
+</main>
+<footer>AI Customer Intelligence Platform • Portfolio Case Study • Tejas Pandit</footer>
+</body>
+</html>
