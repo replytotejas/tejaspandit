@@ -1,47 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Tejas Pandit | AI Product Manager | Customer Success & AI Automation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tejas Pandit | AI Product Manager | Customer Success & AI Automation</title>
 
 <meta name="description"
-content="15+ years in SaaS, Customer Success and Product Management and AI-powered customer operations. Portfolio featuring AI Customer Intelligence, AI Incident Intelligence and product case studies.">
-
+content="15+ years in SaaS, Customer Success and Product Management and AI-powered customer operations. Portfolio featuring AI products, hiring case challenges and product capstones.">
 <meta name="keywords"
 content="Product Manager, AI Product Manager, Customer Success, SaaS, AI Automation, n8n, OpenAI, Customer Operations, Product Portfolio">
+<meta name="author" content="Tejas Pandit">
+<link rel="canonical" href="https://replytotejas.github.io/tejaspandit/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tejas Pandit | AI Product Manager Portfolio">
+<meta property="og:description" content="AI-powered products, customer operations, SaaS implementations and Product Management case studies.">
+<meta property="og:url" content="https://replytotejas.github.io/tejaspandit/">
+<meta property="og:image" content="https://replytotejas.github.io/tejaspandit/portfolio-preview.png">
+<meta name="twitter:card" content="summary_large_image">
 
-<meta name="author"
-content="Tejas Pandit">
-
-<link rel="canonical"
-href="https://replytotejas.github.io/tejaspandit/">
-
-<meta property="og:type"
-content="website">
-
-<meta property="og:title"
-content="Tejas Pandit | AI Product Manager Portfolio">
-
-<meta property="og:description"
-content="AI-powered products, customer operations, SaaS implementations and Product Management case studies.">
-
-<meta property="og:url"
-content="https://replytotejas.github.io/tejaspandit/">
-
-<meta property="og:image"
-content="https://replytotejas.github.io/tejaspandit/portfolio-preview.png">
-
-<meta name="twitter:card"
-content="summary_large_image">
- <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-28STD7PEMW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-28STD7PEMW');
 </script>
- <!-- Microsoft Clarity -->
+<!-- Microsoft Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -49,9 +34,7 @@ content="summary_large_image">
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xtbhbm66ta");
 </script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tejas Pandit - Product Manager</title>
+
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -67,398 +50,196 @@ content="summary_large_image">
     --accent-light: #e8f2ed;
     --accent-mid: #2d7a55;
     --tag-bg: #eef7f2;
-    --tag-text: #1a4f3a;
-    --divider: #d8d5d0;
+    --tag-border: #c5dfd0;
+    --amber: #8a5a12;
+    --amber-bg: #fbf3e4;
+    --amber-border: #ecd6ad;
+    --slate: #34506b;
+    --slate-bg: #edf2f7;
+    --slate-border: #c9d6e3;
     --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --sans: Arial, Helvetica, sans-serif;
   }
 
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
   body {
-    font-family: 'Georgia', 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', serif;
     background: var(--surface-2);
     color: var(--ink);
     font-size: 16px;
     line-height: 1.7;
   }
+  a { color: var(--accent); }
 
   /* NAV */
   nav {
     background: var(--surface);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
     height: 52px;
   }
-  nav .nav-brand { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-family: 'Arial', sans-serif; color: var(--ink); text-decoration: none; }
+  .nav-brand { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; font-family: var(--sans); color: var(--ink); text-decoration: none; }
   nav ul { list-style: none; display: flex; gap: 1.5rem; }
-  nav ul a { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--ink-secondary); text-decoration: none; }
+  nav ul a { font-family: var(--sans); font-size: 13px; color: var(--ink-secondary); text-decoration: none; }
   nav ul a:hover { color: var(--accent); }
 
   /* HERO */
-  .hero {
-    background: var(--accent);
-    color: #fff;
-    padding: 5rem 2rem 4rem;
-    text-align: center;
-  }
-  .hero-eyebrow {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 1rem;
-  }
-  .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    line-height: 1.15;
-    margin-bottom: 1.25rem;
-  }
-  .hero-sub {
-    font-family: 'Arial', sans-serif;
-    font-size: 17px;
-    opacity: 0.85;
-    max-width: 560px;
-    margin: 0 auto 2rem;
-    line-height: 1.6;
-  }
-  .hero-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 2.5rem;
-  }
-  .hero-tag {
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    padding: 4px 12px;
-    border-radius: 20px;
-  }
-  .hero-contact {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .hero-contact a {
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    padding: 8px 20px;
-    border-radius: 6px;
-    transition: background 0.2s;
-  }
+  .hero { background: var(--accent); color: #fff; padding: 5rem 2rem 4rem; text-align: center; }
+  .hero-eyebrow { font-family: var(--sans); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; margin-bottom: 1rem; }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 400; letter-spacing: -0.01em; line-height: 1.15; margin-bottom: 1.25rem; }
+  .hero-sub { font-family: var(--sans); font-size: 17px; opacity: 0.85; max-width: 560px; margin: 0 auto 2rem; line-height: 1.6; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 2.5rem; }
+  .hero-tag { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); color: #fff; font-family: var(--sans); font-size: 12px; padding: 4px 12px; border-radius: 20px; }
+  .hero-contact { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .hero-contact a { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff; text-decoration: none; font-family: var(--sans); font-size: 13px; padding: 8px 20px; border-radius: 6px; transition: background 0.2s; }
   .hero-contact a:hover { background: rgba(255,255,255,0.22); }
+  .hero-contact a.primary { background: #fff; color: var(--accent); border-color: #fff; font-weight: 600; }
 
   /* SECTION */
-  .section {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-  }
-  .section + .section { padding-top: 0; }
-  .section-divider {
-    border: none;
-    border-top: 1px solid var(--border);
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .section-label {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-  }
-  .section-title {
-    font-size: 1.75rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-    letter-spacing: -0.01em;
-  }
-  .section-intro {
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
-    color: var(--ink-secondary);
-    max-width: 620px;
-    margin-bottom: 2.5rem;
-    line-height: 1.6;
-  }
+  .section { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
+  .section-divider { border: none; border-top: 1px solid var(--border); max-width: 1000px; margin: 0 auto; }
+  .section-label { font-family: var(--sans); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
+  .section-title { font-size: 1.75rem; font-weight: 400; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+  .section-intro { font-family: var(--sans); font-size: 15px; color: var(--ink-secondary); max-width: 640px; margin-bottom: 2rem; line-height: 1.6; }
 
   /* ABOUT */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .about-text { font-size: 16px; line-height: 1.8; color: var(--ink); }
+  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 2.5rem; }
+  .about-text { font-size: 16px; line-height: 1.8; }
   .about-text p + p { margin-top: 1rem; }
   .about-stats { display: flex; flex-direction: column; gap: 1rem; }
-  .stat-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    box-shadow: var(--card-shadow);
-  }
-  .stat-num { font-size: 2rem; font-weight: 400; color: var(--accent); line-height: 1; }
-  .stat-label { font-family: 'Arial', sans-serif; font-size: 13px; color: var(--ink-secondary); margin-top: 4px; }
+  .stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1rem 1.25rem; box-shadow: var(--card-shadow); }
+  .stat-num { font-size: 2rem; color: var(--accent); line-height: 1; }
+  .stat-label { font-family: var(--sans); font-size: 13px; color: var(--ink-secondary); margin-top: 4px; }
 
-  /* DIFFERENTIATOR STRIP */
-  .diff-strip {
-    background: var(--accent-light);
-    border-top: 1px solid #c5dfd0;
-    border-bottom: 1px solid #c5dfd0;
-    padding: 2.5rem 2rem;
-  }
-  .diff-inner {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  .diff-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.25rem;
-  }
+  /* DIFFERENTIATOR */
+  .diff-strip { background: var(--accent-light); border-top: 1px solid var(--tag-border); border-bottom: 1px solid var(--tag-border); padding: 2.5rem 2rem; }
+  .diff-inner { max-width: 1000px; margin: 0 auto; }
+  .diff-title { font-family: var(--sans); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 1.25rem; }
   .diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-  .diff-item { }
-  .diff-item strong {
-    display: block;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 0.4rem;
-  }
-  .diff-item p {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: #2d5c40;
-    line-height: 1.6;
-  }
+  .diff-item strong { display: block; font-family: var(--sans); font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 0.4rem; }
+  .diff-item p { font-family: var(--sans); font-size: 13px; color: #2d5c40; line-height: 1.6; }
 
-  /* PROJECT CARDS */
-  .projects-grid { display: grid; gap: 1.5rem; }
-  .project-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: var(--card-shadow);
+  /* WORK INDEX */
+  .work-index { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 2rem; }
+  .index-card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.25rem 1.35rem; box-shadow: var(--card-shadow);
+    border-top: 4px solid var(--c, var(--accent));
+    transition: transform .15s, box-shadow .15s;
   }
-  .project-card-header {
-    padding: 1.5rem 1.75rem 1rem;
-    border-bottom: 1px solid var(--surface-3);
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 1rem;
+  .index-card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+  .index-num { font-size: 2.2rem; line-height: 1; color: var(--c, var(--accent)); }
+  .index-name { font-family: var(--sans); font-size: 15px; font-weight: 600; margin-top: 6px; }
+  .index-desc { font-family: var(--sans); font-size: 13px; color: var(--ink-secondary); line-height: 1.5; margin-top: 4px; }
+  .index-go { font-family: var(--sans); font-size: 12px; color: var(--c, var(--accent)); margin-top: 10px; font-weight: 600; }
+  .c-built { --c: var(--accent); --c-bg: var(--tag-bg); --c-border: var(--tag-border); }
+  .c-challenge { --c: var(--amber); --c-bg: var(--amber-bg); --c-border: var(--amber-border); }
+  .c-capstone { --c: var(--slate); --c-bg: var(--slate-bg); --c-border: var(--slate-border); }
+
+  /* FILTER */
+  .filter-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 0.5rem; }
+  .filter-label { font-family: var(--sans); font-size: 12px; color: var(--ink-muted); margin-right: 4px; }
+  .chip {
+    font-family: var(--sans); font-size: 12.5px; cursor: pointer;
+    background: var(--surface); color: var(--ink-secondary);
+    border: 1px solid var(--border); border-radius: 20px; padding: 5px 13px;
+    transition: all .15s;
   }
-  .project-meta { flex: 1; }
-  .project-badge {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--accent-mid);
-    background: var(--tag-bg);
-    border: 1px solid #c5dfd0;
-    padding: 3px 10px;
-    border-radius: 20px;
-    white-space: nowrap;
+  .chip:hover { border-color: var(--accent-mid); color: var(--accent); }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .filter-status { font-family: var(--sans); font-size: 12px; color: var(--ink-muted); min-height: 18px; margin-bottom: 1rem; }
+
+  /* CATEGORY */
+  .category { margin-top: 2.75rem; }
+  .category-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding-bottom: 0.75rem; border-bottom: 2px solid var(--c); margin-bottom: 0.6rem; }
+  .category-head h3 { font-size: 1.4rem; font-weight: 400; letter-spacing: -0.01em; }
+  .category-count { font-family: var(--sans); font-size: 12px; color: var(--c); background: var(--c-bg); border: 1px solid var(--c-border); padding: 2px 10px; border-radius: 20px; }
+  .category-desc { font-family: var(--sans); font-size: 14px; color: var(--ink-secondary); margin-bottom: 1.25rem; max-width: 720px; }
+
+  /* CARDS */
+  .card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; align-items: start; }
+  .p-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    box-shadow: var(--card-shadow); overflow: hidden; display: flex; flex-direction: column;
   }
-  .project-card h3 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin: 6px 0 4px;
-    letter-spacing: -0.01em;
+  .p-card.wide { grid-column: 1 / -1; }
+  .p-card.is-hidden { display: none; }
+  .p-top { padding: 1.35rem 1.5rem 1rem; }
+  .p-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .badge { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--c); background: var(--c-bg); border: 1px solid var(--c-border); padding: 2px 9px; border-radius: 20px; }
+  .badge.new { background: var(--c); color: #fff; border-color: var(--c); }
+  .p-card h4 { font-size: 1.2rem; font-weight: 400; letter-spacing: -0.01em; line-height: 1.3; margin-bottom: 4px; }
+  .p-tagline { font-family: var(--sans); font-size: 13.5px; color: var(--ink-secondary); font-style: italic; line-height: 1.5; }
+  .p-summary { font-family: var(--sans); font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6; margin-top: 10px; }
+
+  .kpi-wrap { padding: 0.9rem 1.5rem; background: var(--surface-2); border-top: 1px solid var(--surface-3); }
+  .kpi-label { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 6px; }
+  .kpis { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; }
+  .kpi { font-family: var(--sans); font-size: 12px; color: var(--ink-secondary); line-height: 1.35; }
+  .kpi strong { display: block; color: var(--c); font-size: 15px; }
+
+  details { border-top: 1px solid var(--surface-3); }
+  summary {
+    font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--ink);
+    padding: 0.8rem 1.5rem; cursor: pointer; list-style: none;
+    display: flex; justify-content: space-between; align-items: center;
   }
-  .project-tagline {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: var(--ink-secondary);
-    font-style: italic;
-  }
-  .project-card-body {
-    padding: 1.25rem 1.75rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-  .project-block-label {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 0.5rem;
-  }
-  .project-block p, .project-block li {
-    font-family: 'Arial', sans-serif;
-    font-size: 13.5px;
-    color: var(--ink-secondary);
-    line-height: 1.6;
-  }
-  .project-block ul { padding-left: 1.1rem; }
-  .project-block li + li { margin-top: 4px; }
-  .project-metrics {
-    padding: 1rem 1.75rem;
-    background: var(--surface-2);
-    border-top: 1px solid var(--border);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .metric {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    color: var(--ink-secondary);
-  }
-  .metric strong { color: var(--accent); font-size: 15px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: '+'; font-size: 18px; color: var(--c); font-weight: 400; line-height: 1; }
+  details[open] summary::after { content: '−'; }
+  summary:hover { background: var(--surface-2); }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem 1.5rem; padding: 0.25rem 1.5rem 1.25rem; }
+  .p-card:not(.wide) .detail-grid { grid-template-columns: 1fr; }
+  .block-label { font-family: var(--sans); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.4rem; }
+  .block p, .block li { font-family: var(--sans); font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6; }
+  .block ul { padding-left: 1.1rem; }
+  .block li + li { margin-top: 3px; }
+
+  .p-links { display: flex; flex-wrap: wrap; gap: 8px; padding: 0.9rem 1.5rem 1.2rem; border-top: 1px solid var(--surface-3); margin-top: auto; }
+  .btn { font-family: var(--sans); font-size: 12.5px; font-weight: 600; text-decoration: none; padding: 7px 14px; border-radius: 6px; border: 1px solid var(--c); color: var(--c); background: var(--surface); }
+  .btn.solid { background: var(--c); color: #fff; }
+  .btn:hover { opacity: 0.85; }
+  .p-links .note { font-family: var(--sans); font-size: 12px; color: var(--ink-muted); align-self: center; }
+
+  .empty-cat { display: none; }
 
   /* SKILLS */
-  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; }
-  .skill-group {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    box-shadow: var(--card-shadow);
-  }
-  .skill-group-title {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 0.75rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border);
-  }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.25rem; }
+  .skill-group { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; box-shadow: var(--card-shadow); }
+  .skill-group-title { font-family: var(--sans); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
   .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-  .skill-tag {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    background: var(--surface-2);
-    border: 1px solid var(--border);
-    color: var(--ink-secondary);
-    padding: 3px 9px;
-    border-radius: 4px;
-  }
-
-  /* TEARDOWNS */
-  .teardown-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
-  .teardown-card {
-    background: var(--surface);
-    border: 1px dashed var(--border);
-    border-radius: 10px;
-    padding: 1.25rem;
-    opacity: 0.7;
-  }
-  .teardown-card h4 {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 4px;
-  }
-  .teardown-card p {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    color: var(--ink-muted);
-    line-height: 1.5;
-  }
-  .teardown-card .coming {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-top: 10px;
-  }
+  .skill-tag { font-family: var(--sans); font-size: 12px; background: var(--surface-2); border: 1px solid var(--border); color: var(--ink-secondary); padding: 3px 9px; border-radius: 4px; }
 
   /* TIMELINE */
   .timeline { position: relative; padding-left: 1.5rem; }
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 4px;
-    top: 8px;
-    bottom: 8px;
-    width: 1px;
-    background: var(--border);
-  }
+  .timeline::before { content: ''; position: absolute; left: 4px; top: 8px; bottom: 8px; width: 1px; background: var(--border); }
   .timeline-item { position: relative; margin-bottom: 2rem; }
-  .timeline-dot {
-    position: absolute;
-    left: -1.5rem;
-    top: 6px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 2px solid var(--surface-2);
-  }
-  .timeline-period {
-    font-family: 'Arial', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: 3px;
-  }
-  .timeline-role {
-    font-family: 'Arial', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--ink);
-  }
-  .timeline-co {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: var(--ink-secondary);
-    margin-bottom: 6px;
-  }
-  .timeline-desc {
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-    color: var(--ink-secondary);
-    line-height: 1.6;
-  }
+  .timeline-dot { position: absolute; left: -1.5rem; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); border: 2px solid var(--surface-2); }
+  .timeline-period { font-family: var(--sans); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 3px; }
+  .timeline-role { font-family: var(--sans); font-size: 15px; font-weight: 600; }
+  .timeline-co { font-family: var(--sans); font-size: 13px; color: var(--ink-secondary); margin-bottom: 6px; }
+  .timeline-desc { font-family: var(--sans); font-size: 13px; color: var(--ink-secondary); line-height: 1.6; }
 
   /* FOOTER */
-  footer {
-    background: var(--ink);
-    color: rgba(255,255,255,0.7);
-    text-align: center;
-    padding: 2.5rem 2rem;
-    font-family: 'Arial', sans-serif;
-    font-size: 13px;
-  }
+  footer { background: var(--ink); color: rgba(255,255,255,0.7); text-align: center; padding: 2.5rem 2rem; font-family: var(--sans); font-size: 13px; }
   footer strong { color: #fff; }
+  footer a { color: #fff; }
 
-  /* UTILS */
-  .gap-top { margin-top: 2rem; }
-
+  @media (max-width: 760px) {
+    .work-index { grid-template-columns: 1fr; }
+    .card-grid { grid-template-columns: 1fr; }
+    .detail-grid { grid-template-columns: 1fr; }
+  }
   @media (max-width: 640px) {
+    nav { padding: 0 1rem; }
+    .section { padding: 3rem 1rem; }
     .about-grid { grid-template-columns: 1fr; }
     .diff-grid { grid-template-columns: 1fr; }
-    .project-card-body { grid-template-columns: 1fr; }
     nav ul { display: none; }
+    .p-top, .kpi-wrap, summary, .detail-grid, .p-links { padding-left: 1.1rem; padding-right: 1.1rem; }
   }
 </style>
 </head>
@@ -469,9 +250,11 @@ content="summary_large_image">
   <a href="#" class="nav-brand">Tejas Pandit</a>
   <ul>
     <li><a href="#work">Work</a></li>
+    <li><a href="#built">Built</a></li>
+    <li><a href="#challenges">Case Challenges</a></li>
+    <li><a href="#capstones">Capstones</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
-    <li><a href="#teardowns">Teardowns</a></li>
   </ul>
 </nav>
 
@@ -489,8 +272,9 @@ content="summary_large_image">
     <span class="hero-tag">GTM Strategy</span>
   </div>
   <div class="hero-contact">
+    <a href="#work" class="primary">See my work ↓</a>
     <a href="mailto:replytotejas@gmail.com">Email me</a>
-    <a href="https://www.linkedin.com/in/tejaspandit" target="_blank">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/tejaspandit" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </section>
 
@@ -501,7 +285,7 @@ content="summary_large_image">
   <div class="about-grid">
     <div class="about-text">
       <p>I spent 15 years watching the same failure happen in different industries: companies building features their customers didn't need, while the problems customers actually had stayed unsolved.</p>
-      <p>As a Customer Success and Operations leader, I sat at the intersection of product gaps and customer pain - translating friction into workarounds, escalations into insights, and churn risk into what the product should have been built to do. That instinct turning customer friction into what the product should have done - is the same one I bring to every CS org I build. Increasingly I've started applying it one layer up the stack: designing and shipping AI-native products (case studies below) that solve the exact problems I used to escalate.</p>
+      <p>As a Customer Success and Operations leader, I sat at the intersection of product gaps and customer pain - translating friction into workarounds, escalations into insights, and churn risk into what the product should have been built to do. Increasingly I've applied that instinct one layer up the stack: designing and shipping AI-native products that solve the exact problems I used to escalate.</p>
       <p>Now I'm making it official. I bring operational depth that most PMs learn in retrospect: I know what "no resolution" feels like from the customer's side, what "spreadsheet workaround" means for a product team, and why trust - not features - is the real retention driver.</p>
     </div>
     <div class="about-stats">
@@ -531,8 +315,8 @@ content="summary_large_image">
         <p>I've lived the broken workflows most PMs only discover through user research. Every case here starts from a failure mode I understand from the inside.</p>
       </div>
       <div class="diff-item">
-        <strong>Constraint led thinking</strong>
-        <p> I scope for limited engineering bandwidth by default. I find the 20% of changes that deliver 80% of stability, because that's what actually ships.</p>
+        <strong>Constraint-led thinking</strong>
+        <p>I scope for limited engineering bandwidth by default. I find the 20% of changes that deliver 80% of stability, because that's what actually ships.</p>
       </div>
       <div class="diff-item">
         <strong>Trust as the metric</strong>
@@ -542,595 +326,566 @@ content="summary_large_image">
   </div>
 </div>
 
- <hr class="section-divider">
-
-<div class="section" id="featured-product">
-  <p class="section-label">Featured Product</p>
-  <h2 class="section-title">myfieldserviceapp</h2>
-
-  <div class="timeline">
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-
-      <p class="timeline-period">Founder / Builder</p>
-      <p class="timeline-role">myfieldserviceapp</p>
-
-      <p class="timeline-co">
-        Field Service Management SaaS
-      </p>
-
-      <p class="timeline-desc">
-        Built a field service management product from scratch — customer discovery,
-        MVP definition, feature prioritization, workflow design and go-to-market execution.
-      </p>
-
-      <p class="timeline-desc" style="margin-top:12px;">
-        Worked directly with field service businesses to understand scheduling,
-        dispatching, invoicing and technician workflows, translating operational
-        pain points into product requirements and platform capabilities.
-      </p>
-
-      <p style="margin-top:20px;">
-        <a href="https://youtu.be/kbZdja6xjE0?si=QLziqiQhhFoqHQcA"
-           target="_blank"
-           style="
-             display:inline-block;
-             background:#1a4f3a;
-             color:#ffffff;
-             text-decoration:none;
-             padding:10px 18px;
-             border-radius:6px;
-             font-family:Arial,sans-serif;
-             font-size:13px;
-             font-weight:600;
-             transition:opacity .2s;">
-          ▶ Watch Product Demo
-        </a>
-      </p>
-
-    </div>
-  </div>
-</div> 
-
-<!-- ===================================== -->
-<!-- AI PRODUCTS (NEW SECTION) -->
-<!-- ===================================== -->
-
-<hr class="section-divider">
-
-<div class="section" id="ai-products">
-
-    <!-- AI PRODUCT PORTFOLIO: Paste inside <div class="section" id="ai-products"> -->
-
-<p class="section-label">AI PRODUCT PORTFOLIO</p>
-
-<h2 class="section-title">AI Products</h2>
-
-<p class="section-intro">
-AI-native products designed to solve customer operations challenges using
-LLMs, workflow automation and product thinking.
-</p>
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<div class="project-card-header">
-
-<div class="project-meta">
-
-<span class="project-badge">AI PRODUCT • CUSTOMER OPERATIONS</span>
-
-<h3>AI Incident Intelligence Platform</h3>
-
-<p class="project-tagline">
-Automatically triages enterprise incidents before a support engineer reads the customer email.
-</p>
-
-</div>
-
-</div>
-
-<div class="project-card-body">
-
-<div class="project-block">
-
-<p class="project-block-label">The Problem</p>
-
-<p>
-Critical customer incidents often arrive as lengthy email threads. Support teams manually determine severity,
-business impact, ownership, SLA and executive communication before engineering can begin investigation.
-</p>
-
-</div>
-
-<div class="project-block">
-
-<p class="project-block-label">AI Solution</p>
-
-<ul>
-<li>Reads incoming customer emails</li>
-<li>Assigns P0–P3 severity</li>
-<li>Determines business impact</li>
-<li>Recommends owning team</li>
-<li>Assigns SLA automatically</li>
-<li>Generates executive-ready Slack brief</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="project-metrics">
-
-<div class="metric">
-<strong>OpenAI</strong><br>
-Decision Engine
-</div>
-
-<div class="metric">
-<strong>n8n</strong><br>
-Workflow
-</div>
-
-<div class="metric">
-<strong>Slack</strong><br>
-Incident Brief
-</div>
-
-<div class="metric">
-<strong><a href="incident-intelligence.html" style="text-decoration:none;color:#1a4f3a;">View →</a></strong><br>
-Case Study
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-
- <div class="project-card">
-
-<div class="project-card-header">
-
-<div class="project-meta">
-
-<span class="project-badge">AI PRODUCT • CUSTOMER SUCCESS</span>
-
-<h3>AI Customer Intelligence Platform</h3>
-
-<p class="project-tagline">
-Automatically analyzes an entire customer portfolio, identifies renewal risk, prioritizes executive attention, and delivers AI-generated leadership briefings.
-</p>
-
-</div>
-
-</div>
-
-<div class="project-card-body">
-
-<div class="project-block">
-
-<p class="project-block-label">The Problem</p>
-
-<p>
-Customer Success leaders spend hours reviewing customer health, support trends, renewals, ARR, product adoption and stakeholder engagement to determine which accounts require attention. Manual portfolio reviews are slow, inconsistent and reactive.
-</p>
-
-</div>
-
-<div class="project-block">
-
-<p class="project-block-label">AI Solution</p>
-
-<ul>
-<li>Analyzes an entire customer portfolio</li>
-<li>Identifies renewal risk</li>
-<li>Flags executive attention</li>
-<li>Detects expansion opportunities</li>
-<li>Recommends next actions</li>
-<li>Generates executive-ready Slack reports</li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="project-metrics">
-
-<div class="metric">
-<strong>50</strong><br>
-Customers Analyzed
-</div>
-
-<div class="metric">
-<strong>1</strong><br>
-GPT Analysis
-</div>
-
-<div class="metric">
-<strong>Slack</strong><br>
-Executive Brief
-</div>
-
-<div class="metric">
-<strong>
-<a href="customer-intelligence.html" style="text-decoration:none;color:#1a4f3a;">
-View →
-</a>
-</strong><br>
-Case Study
-</div>
-
-</div>
-
-</div>   
- <!-- EVERYTHING ABOVE GOES HERE -->
-
-</div>
-
-</div>
-
-<!-- ===================================== -->
-<!-- EXISTING PROJECTS -->
-<!-- ===================================== -->
-
-<hr class="section-divider">
-
-<!-- PROJECTS -->
-<hr class="section-divider">
+<!-- ===================== WORK ===================== -->
 <div class="section" id="work">
-  <p class="section-label">Product Management Certification Featured Product Work</p>
-  <h2 class="section-title">Case Studies</h2>
-  <p class="section-intro">Product thinking exercises, certification capstones, and product case studies - each grounded in a specific operational problem.</p>
+  <p class="section-label">Portfolio</p>
+  <h2 class="section-title">Work, organised by how it was done</h2>
+  <p class="section-intro">Products I built myself, product challenges solved against a real company brief, and certification capstones that take an idea from problem to go-to-market. Filter by domain, or open any card for the full thinking.</p>
 
-  <div class="projects-grid">
-
-    <!-- CARD 0: Titan (Zato Labs PM case challenge) -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">B2B SaaS · AI Product Strategy</span>
-          <h3>Titan - Review Workflow &amp; Agentic AI</h3>
-          <p class="project-tagline">Why 60% of review work leaves the platform, and where AI actually helps.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Only 40% of completed work was reviewed inside Reviewer Cockpit; 60% was approved over email and spreadsheets. Notification tickets rose 22% QoQ, split evenly between "too many" and "I missed something important". Leadership wanted agentic AI this year without knowing where it fits.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Diagnosis</p>
-          <ul>
-            <li>Treated all three signals as evidence to interrogate, not problems to fix</li>
-            <li>Cockpit bypass: likely an adoption or narrow-capability gap, not a missing feature</li>
-            <li>Notifications: a severity-blindness problem, not a volume problem</li>
-            <li>Query-blocking time is the one hard, measurable constraint</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Where agentic AI helps</p>
-          <ul>
-            <li>P1: Pre-submission readiness nudge (upstream fix)</li>
-            <li>P2: Query triage &amp; draft response (ties to the hard gate)</li>
-            <li>P3: Cross-job "what needs you today" Work Queue (Q2 only)</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Roadmap logic</p>
-          <p>Q1: diagnose and prototype the safest bet. Q2: build only what Q1 evidence validates - and if nothing validates, build neither. Quick fixes ship only as named stopgaps that don't block the real fix.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>40% → ?</strong><br>Reviews completed in-platform</div>
-        <div class="metric"><strong>↓</strong><br>Median query-blocking time</div>
-        <div class="metric"><strong>↑</strong><br>High-priority items acted on in SLA</div>
-        <div class="metric"><strong><a href="titan-case-study.html" style="text-decoration:none;color:#1a4f3a;">View →</a></strong><br>Case Study</div>
-        <div class="metric"><strong><a href="titan-case-study.pdf" target="_blank" style="text-decoration:none;color:#1a4f3a;">Deck ↓</a></strong><br>PDF</div>
-      </div>
-    </div>
-
-    <!-- CARD 1: Payment Platform -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">Enterprise Fintech · Product Strategy</span>
-          <h3>Payment Platform Stabilisation</h3>
-          <p class="project-tagline">Stop the bleed. Restore enterprise trust. One quarter, zero disruption.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Peak traffic triggered DB lock contention → retry storms → settlement engine failures. Reconciliation mismatches weren't a reporting bug - they were a symptom of transaction data written out of chronological order. Ops team was manual middleware.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">My approach</p>
-          <ul>
-            <li>Telemetry audit to map failure rates by client, payment rail, error code</li>
-            <li>Separated structural errors (true mismatches) from timing errors (sync lag)</li>
-            <li>Ops time-motion study to baseline manual reconciliation hours</li>
-            <li>P0 prioritisation: highest impact, minimal engineering lift</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Solutions shipped</p>
-          <ul>
-            <li>Idempotent retry logic with exponential backoff + jitter</li>
-            <li>30-min reconciliation delay buffer post peak windows</li>
-            <li>Exception triage dashboard (Retool) - Ops out of Excel</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Key insight</p>
-          <p>"Operational stabilisation over platform transformation - stop the bleed for internal teams, restore predictability for enterprise clients, within a single quarter, zero disruption."</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>↓35%</strong><br>Sev-1/2 incidents</div>
-        <div class="metric"><strong>↓50%</strong><br>Reconciliation mismatches</div>
-        <div class="metric"><strong>Zero</strong><br>Duplicate transactions</div>
-        <div class="metric"><strong>↓60%</strong><br>Manual reconciliation hours</div>
-        <div class="metric"><strong>12 weeks</strong><br>Delivery timeline</div>
-      </div>
-    </div>
-
-    <!-- CARD 2: Swiggy AI -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">Consumer AI · Product Case Study</span>
-          <h3>Swiggy AI - Rider Support Resolution</h3>
-          <p class="project-tagline">From raising tickets to resolving issues within the same interaction.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Riders with payout questions got generic AI responses, no resolution, and lost trust in the platform. The system was optimised for process, not outcomes. Four distinct gaps: Explanation, Context, Action, Ownership - each eroding trust at a different stage.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Core diagnosis</p>
-          <p>Current AI was built for queries, not situations. It matched keywords and returned predefined responses. It had no decision layer - it could not validate, only redirect. Wrong financial explanations destroyed trust faster than any other failure mode.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Solution: Context-Aware Resolution System</p>
-          <ul>
-            <li>Detects rider intent; uses existing orders, earnings, incentive context</li>
-            <li>Explains "why" using real data - no more confusion about earnings</li>
-            <li>Confidence threshold logic: AI resolves above 90%, human escalates below</li>
-            <li>P0 focus: Earnings clarity (highest cost of misinformation)</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Rollout strategy</p>
-          <p>Phase 1: MVP pilot in 1 high-volume city (Pune/Bangalore), Hindi + English + local language. Phase 2: 3-5 cities, edge case handling. Phase 3: Pan-India, voice (vernacular), proactive nudges.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>35%→60%+</strong><br>Automation rate</div>
-        <div class="metric"><strong>↓</strong><br>Repeat queries (trust signal)</div>
-        <div class="metric"><strong>↑ CSAT</strong><br>Post-interaction</div>
-        <div class="metric"><strong>0</strong><br>Wrong financial explanations escalated</div>
-      </div>
-    </div>
-
-    <!-- CARD 3: Kovai KMS -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">B2B SaaS · Product Case Study</span>
-          <h3>Knowledge Management Platform Adoption</h3>
-          <p class="project-tagline">From knowledge library to GPS for expertise.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>65% of registered users abandoned the knowledge base after 30 days. Support teams still received repetitive questions that already had documented answers. The platform was a library when users needed a GPS - passive storage vs active guidance.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Root cause diagnosis</p>
-          <ul>
-            <li>Discovery failures - agents couldn't find answers fast enough</li>
-            <li>Workflow friction - required leaving tools to search</li>
-            <li>Decaying trust - wrong or stale answers collapsed confidence</li>
-            <li>Authoring tax - creating knowledge was too expensive</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Three-pillar strategy</p>
-          <ul>
-            <li>Workflow-native delivery - CRM/ticket plugins, intent-based snippets, 1-click insert</li>
-            <li>Knowledge capture pipeline - AI drafts from closed tickets, gap detection</li>
-            <li>Verified knowledge engine - SME approval queue, freshness signals, confidence scoring</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Prioritisation logic</p>
-          <p>RICE framework, weighted for time-to-value. Q1: Embedded Answer Intelligence + Trust Signals (remove search friction). Q2: Resolution → Knowledge Pipeline (automate creation). First build the GPS interface, then the GPS learning engine.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>35%→55%</strong><br>MAU target</div>
-        <div class="metric"><strong>↓20%</strong><br>Avg handle time</div>
-        <div class="metric"><strong>↑</strong><br>Ticket deflection rate</div>
-        <div class="metric"><strong>↓</strong><br>Senior engineer expertise tax</div>
-      </div>
-    </div>
-
-    <!-- CARD 4: Payroll Workflow -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">HRTech · Product Case Study</span>
-          <h3>Payroll Workflow Reliability</h3>
-          <p class="project-tagline">Prevent errors earlier. Make workflows transparent. Stop regressions. 4-6 weeks.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">The problem</p>
-          <p>Rising support tickets, manual Excel workarounds, and churn risk - all symptoms of broken system trust. Payroll is a financial accuracy product. When HR teams lose trust, they build parallel systems and evaluate competitors.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Four failure modes</p>
-          <ul>
-            <li>Validation vacuum - errors discovered only post-processing</li>
-            <li>Black box workflow - no explainability, no auditability</li>
-            <li>Release regressions - weekly shipping broke edge cases unnoticed</li>
-            <li>Edge-case blind spots - no guidance for mid-cycle, retroactive scenarios</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Data-first approach</p>
-          <ul>
-            <li>Support ticket clustering by stage: input, calculation, payout</li>
-            <li>Workflow drop-off funnel via Mixpanel/Amplitude</li>
-            <li>Manual correction audit - every spreadsheet = a missing product rule</li>
-            <li>Release correlation analysis - overlay tickets against release notes</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Solutions (no rebuild)</p>
-          <ul>
-            <li>Wks 1-2: Pre-flight validation layer + payroll health summary</li>
-            <li>Wks 2-3: Variance & summary dashboard (black box → audit receipt)</li>
-            <li>Wks 3-6: Edge-case patches + regression test suite + feature flags</li>
-          </ul>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>↓40%</strong><br>Payroll error tickets</div>
-        <div class="metric"><strong>↓50%</strong><br>Off-platform corrections</div>
-        <div class="metric"><strong>↑85%+</strong><br>Workflow completion rate</div>
-        <div class="metric"><strong>100%</strong><br>At-risk accounts retained</div>
-      </div>
-    </div>
-
-    <!-- CARD 5: Condition Monitoring -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">Industrial SaaS · Product Strategy</span>
-          <h3>Condition Monitoring SaaS Platform</h3>
-          <p class="project-tagline">Signal-agnostic predictive intelligence for industrial maintenance.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">Domain expertise applied</p>
-          <p>Identified the technical ambiguity in the brief between 4-20mA process telemetry and Motor Current Signature Analysis - a distinction that shapes the entire product architecture. Defined the platform around MCSA (high-frequency harmonic analysis) as the defensible differentiation.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Platform architecture</p>
-          <ul>
-            <li>Signal-agnostic ingestion: Vibration, MCSA, Thermal, Process via MQTT/OPC-UA</li>
-            <li>Multi-tenant design: JWT isolation, RBAC, dynamic schema for new signal types</li>
-            <li>Three-phase roadmap: Mechanical → Electrical → Unified AI with RUL models</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Market framing</p>
-          <p>$23B industrial predictive maintenance market by 2027. 47% of unplanned downtime avoidable. 3-5× ROI on predictive vs reactive. Buyer: Plant Manager/VP Maintenance (downtime cost, OEE). User: Reliability Engineer (early fault detection, less alert fatigue).</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Security & compliance</p>
-          <p>AES-256 encryption at rest, tenant data isolation, full audit logs - designed for industrial enterprise requirements from day one.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>$23B</strong><br>Market by 2027</div>
-        <div class="metric"><strong>3-5×</strong><br>ROI vs reactive maintenance</div>
-        <div class="metric"><strong>3 phases</strong><br>Mechanical → Electrical → AI</div>
-        <div class="metric"><strong>Multi-tenant</strong><br>Isolated, RBAC, audited</div>
-      </div>
-    </div>
-
-    <!-- CARD 6: AgriBridge -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">AgriTech · GTM Capstone</span>
-          <h3>AgriBridge - GTM for Smallholder Farmers</h3>
-          <p class="project-tagline">WhatsApp-first marketplace. Fair price transparency. No middlemen.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">Market context</p>
-          <p>110 million smallholder farmers, $500B agricultural production value, $20B Indian agtech market. Farmers receiving only 60-65% of end-market value via traditional agent routes. e-NAM reaching 17.7M farmers but still constrained by digital literacy and connectivity.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Strategic positioning</p>
-          <p>WhatsApp-first (zero learning curve), vernacular-first (Marathi, Hindi, local languages), hyper-local advisory, verified buyer listings. Competitive gap vs DeHaat (complex UI), Gramophone (limited buyer network), AgroStar (input-focused).</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">GTM challenges addressed</p>
-          <ul>
-            <li>Digital literacy barrier - WhatsApp removes app adoption friction</li>
-            <li>Trust deficit - verified buyers + transparent pricing</li>
-            <li>Remote outreach - community-led onboarding via FPOs, local Krishi Mitra</li>
-            <li>Regulatory risk - WhatsApp dependency acknowledged as threat</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Value proposition</p>
-          <p>Farmers earn 85-90% of end-market value vs 60-65% via traditional routes - a 25-30 percentage point income improvement for India's most underserved economic segment.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>110M</strong><br>TAM (smallholder farmers)</div>
-        <div class="metric"><strong>85-90%</strong><br>vs 60-65% traditional value</div>
-        <div class="metric"><strong>WhatsApp-first</strong><br>Zero learning curve</div>
-        <div class="metric"><strong>Vernacular</strong><br>Local language, local advisory</div>
-      </div>
-    </div>
-
-    <!-- CARD 7: CareLoop -->
-    <div class="project-card">
-      <div class="project-card-header">
-        <div class="project-meta">
-          <span class="project-badge">HealthTech · PM Capstone</span>
-          <h3>CareLoop - Digital Chronic Disease Management</h3>
-          <p class="project-tagline">HIPAA-compliant chronic care platform connecting patients, wearables, and providers.</p>
-        </div>
-      </div>
-      <div class="project-card-body">
-        <div class="project-block">
-          <p class="project-block-label">Problem framing</p>
-          <p>60-80M chronic patients in India (diabetes/hypertension) with fragmented care: manual health logs, infrequent doctor visits (every 3 months), no real-time provider visibility. Low data integration between patient and provider.</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Discovery approach</p>
-          <p>20+ patient interviews, 5 expert consultations, prototype testing (low-fidelity UI). Two primary personas: Rajesh (52, bank manager, diabetes + BP, forgets logs, overwhelmed) and Dr. Meera Kamat (diabetologist, 200+ patients, needs AI risk prediction).</p>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">MVP core features</p>
-          <ul>
-            <li>Wearable integration (BP, glucose, vitals)</li>
-            <li>Provider dashboard with abnormal value alerts</li>
-            <li>Secure messaging and basic telehealth</li>
-            <li>Daily health recommendations</li>
-          </ul>
-        </div>
-        <div class="project-block">
-          <p class="project-block-label">Scale path</p>
-          <p>Phase 1: 100-200 patients pilot. Phase 2: 10+ clinics, hospital network tie-ups, 5K+ active users. Phase 3: AI-driven risk prediction, insurance integration, national expansion.</p>
-        </div>
-      </div>
-      <div class="project-metrics">
-        <div class="metric"><strong>60-80M</strong><br>Target patient market</div>
-        <div class="metric"><strong>D30 retention</strong><br>Primary MVP metric</div>
-        <div class="metric"><strong>HIPAA</strong><br>Compliant by design</div>
-        <div class="metric"><strong>B2B2C</strong><br>Clinic-led GTM</div>
-      </div>
-    </div>
-
+  <div class="work-index">
+    <a class="index-card c-built" href="#built">
+      <div class="index-num">3</div>
+      <div class="index-name">Built &amp; Shipped</div>
+      <div class="index-desc">A SaaS product I founded and two working AI products.</div>
+      <div class="index-go">Jump to section →</div>
+    </a>
+    <a class="index-card c-challenge" href="#challenges">
+      <div class="index-num">5</div>
+      <div class="index-name">Product Case Challenges</div>
+      <div class="index-desc">Diagnose-and-prioritise problems for real products: Swiggy, Kovai.co, Zato and more.</div>
+      <div class="index-go">Jump to section →</div>
+    </a>
+    <a class="index-card c-capstone" href="#capstones">
+      <div class="index-num">3</div>
+      <div class="index-name">Strategy Capstones</div>
+      <div class="index-desc">0→1 product strategy and GTM across HealthTech, AgriTech and Industrial IoT.</div>
+      <div class="index-go">Jump to section →</div>
+    </a>
   </div>
+
+  <div class="filter-bar" role="group" aria-label="Filter projects by domain">
+    <span class="filter-label">Filter by domain:</span>
+    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+    <button class="chip" data-filter="ai" aria-pressed="false">AI</button>
+    <button class="chip" data-filter="saas" aria-pressed="false">B2B SaaS</button>
+    <button class="chip" data-filter="cx" aria-pressed="false">Customer Ops</button>
+    <button class="chip" data-filter="fintech" aria-pressed="false">FinTech &amp; HRTech</button>
+    <button class="chip" data-filter="health" aria-pressed="false">HealthTech</button>
+    <button class="chip" data-filter="agri" aria-pressed="false">AgriTech</button>
+    <button class="chip" data-filter="industrial" aria-pressed="false">Industrial</button>
+  </div>
+  <p class="filter-status" id="filter-status" aria-live="polite"></p>
+
+  <!-- ============ CATEGORY 1: BUILT ============ -->
+  <section class="category c-built" id="built">
+    <div class="category-head">
+      <h3>Built &amp; Shipped</h3>
+      <span class="category-count" data-count></span>
+    </div>
+    <p class="category-desc">Things I designed and built myself, end to end - not just specified.</p>
+
+    <div class="card-grid">
+
+      <!-- myfieldserviceapp -->
+      <article class="p-card wide" data-tags="saas cx">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">Founder · 2020–2023</span><span class="badge">Field Service SaaS</span></div>
+          <h4>myfieldserviceapp</h4>
+          <p class="p-tagline">A field service management product, built 0→1 from customer discovery to go-to-market.</p>
+          <p class="p-summary">Worked directly with field service businesses to understand scheduling, dispatching, invoicing and technician workflows, then translated those operational pain points into product requirements and platform capabilities.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">At a glance</div>
+          <div class="kpis">
+            <div class="kpi"><strong>0→1</strong>Built from scratch</div>
+            <div class="kpi"><strong>Full lifecycle</strong>Discovery → MVP → GTM</div>
+            <div class="kpi"><strong>SMB</strong>Field service businesses</div>
+          </div>
+        </div>
+        <details>
+          <summary>What I owned</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">Product</p>
+              <ul>
+                <li>Customer discovery with field operations teams</li>
+                <li>MVP definition and feature prioritisation</li>
+                <li>Workflow design: scheduling, dispatch, invoicing</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Business</p>
+              <ul>
+                <li>Go-to-market execution and sales</li>
+                <li>Onboarding and customer success</li>
+                <li>Working within the constraints of small service businesses</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+        <div class="p-links">
+          <a class="btn solid" href="https://youtu.be/kbZdja6xjE0?si=QLziqiQhhFoqHQcA" target="_blank" rel="noopener">▶ Watch product demo</a>
+        </div>
+      </article>
+
+      <!-- AI Incident Intelligence -->
+      <article class="p-card" data-tags="ai cx saas">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">AI Product</span><span class="badge">Customer Operations</span></div>
+          <h4>AI Incident Intelligence Platform</h4>
+          <p class="p-tagline">Triages enterprise incidents before a support engineer reads the customer email.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">Stack</div>
+          <div class="kpis">
+            <div class="kpi"><strong>OpenAI</strong>Decision engine</div>
+            <div class="kpi"><strong>n8n</strong>Workflow</div>
+            <div class="kpi"><strong>Slack</strong>Incident brief</div>
+          </div>
+        </div>
+        <details>
+          <summary>Problem &amp; solution</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">The problem</p>
+              <p>Critical incidents arrive as lengthy email threads. Support teams manually work out severity, business impact, ownership, SLA and executive comms before engineering can start investigating.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">AI solution</p>
+              <ul>
+                <li>Reads incoming customer emails</li>
+                <li>Assigns P0–P3 severity and business impact</li>
+                <li>Recommends owning team and SLA</li>
+                <li>Generates an executive-ready Slack brief</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+        <div class="p-links">
+          <a class="btn solid" href="incident-intelligence.html">Read case study →</a>
+        </div>
+      </article>
+
+      <!-- AI Customer Intelligence -->
+      <article class="p-card" data-tags="ai cx saas">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">AI Product</span><span class="badge">Customer Success</span></div>
+          <h4>AI Customer Intelligence Platform</h4>
+          <p class="p-tagline">Analyses a whole customer portfolio, flags renewal risk and delivers a leadership briefing.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">At a glance</div>
+          <div class="kpis">
+            <div class="kpi"><strong>50</strong>Customers analysed</div>
+            <div class="kpi"><strong>1</strong>GPT analysis pass</div>
+            <div class="kpi"><strong>Slack</strong>Executive brief</div>
+          </div>
+        </div>
+        <details>
+          <summary>Problem &amp; solution</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">The problem</p>
+              <p>CS leaders spend hours reviewing health, support trends, renewals, ARR, adoption and stakeholder engagement to decide which accounts need attention. Manual portfolio reviews are slow, inconsistent and reactive.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">AI solution</p>
+              <ul>
+                <li>Identifies renewal risk across the portfolio</li>
+                <li>Flags accounts needing executive attention</li>
+                <li>Detects expansion opportunities</li>
+                <li>Recommends next actions in a Slack report</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+        <div class="p-links">
+          <a class="btn solid" href="customer-intelligence.html">Read case study →</a>
+        </div>
+      </article>
+
+    </div>
+    <p class="category-desc empty-cat">No projects in this section match the filter.</p>
+  </section>
+
+  <!-- ============ CATEGORY 2: CASE CHALLENGES ============ -->
+  <section class="category c-challenge" id="challenges">
+    <div class="category-head">
+      <h3>Product Case Challenges</h3>
+      <span class="category-count" data-count></span>
+    </div>
+    <p class="category-desc">A real product, a messy brief and limited time: diagnose the problem, prioritise, and defend a plan. Outcome figures are the targets I set, not shipped results.</p>
+
+    <div class="card-grid">
+
+      <!-- Titan (Zato) -->
+      <article class="p-card wide" data-tags="ai saas">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge new">New</span><span class="badge">Zato Labs PM Challenge</span><span class="badge">B2B SaaS · Agentic AI</span></div>
+          <h4>Titan - Review Workflow &amp; Agentic AI</h4>
+          <p class="p-tagline">Why 60% of review work leaves the platform, and where AI actually helps.</p>
+          <p class="p-summary">Only 40% of completed work was reviewed inside Reviewer Cockpit; the rest was approved over email and spreadsheets. Notification tickets rose 22% QoQ, split evenly between "too many" and "I missed something important". Leadership wanted agentic AI this year but hadn't decided where.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">The plan</div>
+          <div class="kpis">
+            <div class="kpi"><strong>5</strong>Discovery questions</div>
+            <div class="kpi"><strong>3</strong>AI bets, ranked</div>
+            <div class="kpi"><strong>2 quarters</strong>Evidence-gated roadmap</div>
+            <div class="kpi"><strong>40% → ↑</strong>Reviews completed in-platform</div>
+          </div>
+        </div>
+        <details>
+          <summary>Diagnosis, AI bets &amp; roadmap</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">Diagnosis</p>
+              <ul>
+                <li>Treated all three signals as evidence to interrogate, not problems to fix</li>
+                <li>Cockpit bypass: likely an adoption or narrow-capability gap, not a missing feature</li>
+                <li>Notifications: severity-blindness, not volume</li>
+                <li>Query-blocking time is the one hard, measurable constraint</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Where agentic AI helps</p>
+              <ul>
+                <li>P1: Pre-submission readiness nudge (upstream fix)</li>
+                <li>P2: Query triage &amp; draft response (ties to the hard gate)</li>
+                <li>P3: Cross-job "what needs you today" Work Queue (Q2 only)</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Roadmap logic</p>
+              <p>Q1: diagnose and prototype the safest bet. Q2: build only what Q1 evidence validates, and if nothing validates, build neither.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Quick fix vs. real fix</p>
+              <p>Ship a 2-week fix only if it reduces pain without creating debt that blocks the quarter-long fix, and only as a named stopgap.</p>
+            </div>
+          </div>
+        </details>
+        <div class="p-links">
+          <a class="btn solid" href="titan-case-study.html">Read case study →</a>
+          <a class="btn" href="titan-case-study.pdf" target="_blank" rel="noopener">Deck (PDF)</a>
+        </div>
+      </article>
+
+      <!-- Payment Platform -->
+      <article class="p-card" data-tags="fintech saas">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">Enterprise FinTech</span><span class="badge">Stabilisation</span></div>
+          <h4>Payment Platform Stabilisation</h4>
+          <p class="p-tagline">Stop the bleed. Restore enterprise trust. One quarter, zero disruption.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">Target outcomes</div>
+          <div class="kpis">
+            <div class="kpi"><strong>↓35%</strong>Sev-1/2 incidents</div>
+            <div class="kpi"><strong>↓50%</strong>Reconciliation mismatches</div>
+            <div class="kpi"><strong>↓60%</strong>Manual recon hours</div>
+            <div class="kpi"><strong>12 wks</strong>Delivery</div>
+          </div>
+        </div>
+        <details>
+          <summary>Problem, approach &amp; solution</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">The problem</p>
+              <p>Peak traffic triggered DB lock contention → retry storms → settlement failures. Reconciliation mismatches weren't a reporting bug but a symptom of data written out of order. Ops had become manual middleware.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">My approach</p>
+              <ul>
+                <li>Telemetry audit by client, payment rail and error code</li>
+                <li>Separated structural errors from timing (sync-lag) errors</li>
+                <li>Ops time-motion study to baseline manual hours</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Proposed solutions</p>
+              <ul>
+                <li>Idempotent retries with exponential backoff + jitter</li>
+                <li>30-min reconciliation buffer after peak windows</li>
+                <li>Exception triage dashboard (Retool) to get Ops out of Excel</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Key insight</p>
+              <p>Operational stabilisation over platform transformation: restore predictability for enterprise clients within a single quarter.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- Swiggy -->
+      <article class="p-card" data-tags="ai cx">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">Consumer AI</span><span class="badge">Swiggy</span></div>
+          <h4>Swiggy AI - Rider Support Resolution</h4>
+          <p class="p-tagline">From raising tickets to resolving issues within the same interaction.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">Target outcomes</div>
+          <div class="kpis">
+            <div class="kpi"><strong>35%→60%+</strong>Automation rate</div>
+            <div class="kpi"><strong>↓</strong>Repeat queries</div>
+            <div class="kpi"><strong>↑</strong>Post-interaction CSAT</div>
+          </div>
+        </div>
+        <details>
+          <summary>Problem, diagnosis &amp; solution</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">The problem</p>
+              <p>Riders with payout questions got generic AI responses and no resolution. Four gaps - Explanation, Context, Action, Ownership - each eroded trust at a different stage.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Core diagnosis</p>
+              <p>The AI was built for queries, not situations: keyword matching with no decision layer. Wrong financial explanations destroyed trust fastest.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Context-aware resolution system</p>
+              <ul>
+                <li>Uses order, earnings and incentive context to explain "why"</li>
+                <li>AI resolves above 90% confidence; humans take the rest</li>
+                <li>P0 focus: earnings clarity</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Rollout</p>
+              <p>Pilot in one high-volume city (Hindi + English + local language) → 3–5 cities → pan-India with vernacular voice and proactive nudges.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- Kovai KMS -->
+      <article class="p-card" data-tags="saas ai cx">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">B2B SaaS</span><span class="badge">Kovai.co</span></div>
+          <h4>Knowledge Management Platform Adoption</h4>
+          <p class="p-tagline">From knowledge library to GPS for expertise.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">Target outcomes</div>
+          <div class="kpis">
+            <div class="kpi"><strong>35%→55%</strong>MAU</div>
+            <div class="kpi"><strong>↓20%</strong>Avg handle time</div>
+            <div class="kpi"><strong>↑</strong>Ticket deflection</div>
+          </div>
+        </div>
+        <details>
+          <summary>Problem, root cause &amp; strategy</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">The problem</p>
+              <p>65% of users abandoned the knowledge base within 30 days, while support kept answering questions that were already documented.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Root causes</p>
+              <ul>
+                <li>Discovery failures and workflow friction</li>
+                <li>Decaying trust from stale answers</li>
+                <li>Authoring was too expensive</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Three-pillar strategy</p>
+              <ul>
+                <li>Workflow-native delivery inside CRM and ticketing</li>
+                <li>AI drafts knowledge from closed tickets</li>
+                <li>Verified engine: SME approval, freshness, confidence</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Prioritisation</p>
+              <p>RICE weighted for time-to-value. Q1: embedded answers + trust signals. Q2: resolution → knowledge pipeline.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- Payroll -->
+      <article class="p-card" data-tags="fintech saas">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">HRTech</span><span class="badge">Codetru</span></div>
+          <h4>Payroll Workflow Reliability</h4>
+          <p class="p-tagline">Prevent errors earlier, make workflows transparent, stop regressions. 4–6 weeks.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">Target outcomes</div>
+          <div class="kpis">
+            <div class="kpi"><strong>↓40%</strong>Payroll error tickets</div>
+            <div class="kpi"><strong>↓50%</strong>Off-platform corrections</div>
+            <div class="kpi"><strong>85%+</strong>Workflow completion</div>
+          </div>
+        </div>
+        <details>
+          <summary>Failure modes &amp; solution</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">The problem</p>
+              <p>Rising tickets, Excel workarounds and churn risk: symptoms of broken trust in a financial-accuracy product.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Four failure modes</p>
+              <ul>
+                <li>Validation vacuum and black-box workflow</li>
+                <li>Release regressions on weekly shipping</li>
+                <li>Edge-case blind spots (mid-cycle, retroactive)</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Data-first approach</p>
+              <ul>
+                <li>Ticket clustering by input, calculation and payout stage</li>
+                <li>Manual-correction audit: every spreadsheet is a missing rule</li>
+                <li>Overlay tickets against release notes</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Solution (no rebuild)</p>
+              <p>Wks 1–2 pre-flight validation; Wks 2–3 variance dashboard; Wks 3–6 edge-case patches, regression suite and feature flags.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+    </div>
+    <p class="category-desc empty-cat">No projects in this section match the filter.</p>
+  </section>
+
+  <!-- ============ CATEGORY 3: CAPSTONES ============ -->
+  <section class="category c-capstone" id="capstones">
+    <div class="category-head">
+      <h3>Product Strategy Capstones</h3>
+      <span class="category-count" data-count></span>
+    </div>
+    <p class="category-desc">ICPM certification capstones: market framing, personas, MVP scope and go-to-market for a new product.</p>
+
+    <div class="card-grid">
+
+      <!-- CareLoop -->
+      <article class="p-card" data-tags="health saas">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">HealthTech</span><span class="badge">B2B2C</span></div>
+          <h4>CareLoop - Chronic Disease Management</h4>
+          <p class="p-tagline">A chronic-care platform connecting patients, wearables and providers.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">At a glance</div>
+          <div class="kpis">
+            <div class="kpi"><strong>60–80M</strong>Target patients</div>
+            <div class="kpi"><strong>20+</strong>Patient interviews</div>
+            <div class="kpi"><strong>D30</strong>Primary MVP metric</div>
+          </div>
+        </div>
+        <details>
+          <summary>Discovery, MVP &amp; scale path</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">Problem framing</p>
+              <p>Diabetes and hypertension patients in India face fragmented care: manual logs, doctor visits every three months, and no real-time provider visibility.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Discovery</p>
+              <p>20+ patient interviews, 5 expert consultations and low-fidelity prototype tests, distilled into a patient persona and a diabetologist persona.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">MVP</p>
+              <ul>
+                <li>Wearable integration (BP, glucose, vitals)</li>
+                <li>Provider dashboard with abnormal-value alerts</li>
+                <li>Secure messaging and basic telehealth</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Scale path</p>
+              <p>100–200 patient pilot → 10+ clinics and 5K users → AI risk prediction and insurance integration.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- AgriBridge -->
+      <article class="p-card" data-tags="agri">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">AgriTech</span><span class="badge">GTM</span></div>
+          <h4>AgriBridge - GTM for Smallholder Farmers</h4>
+          <p class="p-tagline">WhatsApp-first marketplace with fair-price transparency and no middlemen.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">At a glance</div>
+          <div class="kpis">
+            <div class="kpi"><strong>110M</strong>Smallholder farmers</div>
+            <div class="kpi"><strong>85–90%</strong>vs 60–65% of end value</div>
+            <div class="kpi"><strong>WhatsApp</strong>Zero learning curve</div>
+          </div>
+        </div>
+        <details>
+          <summary>Market, positioning &amp; GTM</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">Market context</p>
+              <p>Farmers receive only 60–65% of end-market value via agent routes; e-NAM is constrained by digital literacy and connectivity.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Positioning</p>
+              <p>WhatsApp-first, vernacular-first, hyper-local advisory and verified buyers - against DeHaat's complex UI, Gramophone's thin buyer network and AgroStar's input focus.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">GTM challenges</p>
+              <ul>
+                <li>Digital literacy: WhatsApp removes app friction</li>
+                <li>Trust: verified buyers, transparent pricing</li>
+                <li>Reach: onboarding via FPOs and Krishi Mitras</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Value proposition</p>
+              <p>A 25–30 point improvement in the share of end-market value farmers keep.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- Condition Monitoring -->
+      <article class="p-card wide" data-tags="industrial saas ai">
+        <div class="p-top">
+          <div class="p-badges"><span class="badge">Industrial SaaS</span><span class="badge">Platform Strategy</span></div>
+          <h4>Condition Monitoring SaaS Platform</h4>
+          <p class="p-tagline">Signal-agnostic predictive intelligence for industrial maintenance.</p>
+        </div>
+        <div class="kpi-wrap">
+          <div class="kpi-label">At a glance</div>
+          <div class="kpis">
+            <div class="kpi"><strong>$23B</strong>Market by 2027</div>
+            <div class="kpi"><strong>3–5×</strong>ROI vs reactive maintenance</div>
+            <div class="kpi"><strong>3 phases</strong>Mechanical → Electrical → AI</div>
+            <div class="kpi"><strong>Multi-tenant</strong>Isolated, RBAC, audited</div>
+          </div>
+        </div>
+        <details>
+          <summary>Domain insight, architecture &amp; market</summary>
+          <div class="detail-grid">
+            <div class="block">
+              <p class="block-label">Domain expertise applied</p>
+              <p>Spotted the ambiguity in the brief between 4–20mA process telemetry and Motor Current Signature Analysis, and anchored the platform on MCSA as the defensible differentiator.</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Platform architecture</p>
+              <ul>
+                <li>Vibration, MCSA, thermal and process signals via MQTT/OPC-UA</li>
+                <li>JWT tenant isolation, RBAC, dynamic schema</li>
+                <li>Roadmap to unified AI with remaining-useful-life models</li>
+              </ul>
+            </div>
+            <div class="block">
+              <p class="block-label">Market framing</p>
+              <p>Buyer: Plant Manager / VP Maintenance (downtime cost, OEE). User: Reliability Engineer (early fault detection, less alert fatigue).</p>
+            </div>
+            <div class="block">
+              <p class="block-label">Security &amp; compliance</p>
+              <p>AES-256 at rest, tenant data isolation and full audit logs from day one.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+    </div>
+    <p class="category-desc empty-cat">No projects in this section match the filter.</p>
+  </section>
 </div>
 
 <!-- SKILLS -->
@@ -1140,86 +895,51 @@ Case Study
   <h2 class="section-title">Product Management Skills</h2>
   <div class="skills-grid">
     <div class="skill-group">
-      <p class="skill-group-title">Discovery & Strategy</p>
+      <p class="skill-group-title">Discovery &amp; Strategy</p>
       <div class="skill-tags">
-        <span class="skill-tag">User Interviews</span>
-        <span class="skill-tag">Jobs-to-be-Done</span>
-        <span class="skill-tag">Problem Framing</span>
-        <span class="skill-tag">Product Strategy</span>
-        <span class="skill-tag">Roadmapping</span>
-        <span class="skill-tag">Market Sizing</span>
+        <span class="skill-tag">User Interviews</span><span class="skill-tag">Jobs-to-be-Done</span><span class="skill-tag">Problem Framing</span><span class="skill-tag">Product Strategy</span><span class="skill-tag">Roadmapping</span><span class="skill-tag">Market Sizing</span>
       </div>
     </div>
     <div class="skill-group">
       <p class="skill-group-title">Prioritisation</p>
       <div class="skill-tags">
-        <span class="skill-tag">RICE</span>
-        <span class="skill-tag">ICE</span>
-        <span class="skill-tag">Effort / Impact Matrix</span>
-        <span class="skill-tag">MoSCoW</span>
-        <span class="skill-tag">P0/P1/P2 Tiering</span>
+        <span class="skill-tag">RICE</span><span class="skill-tag">ICE</span><span class="skill-tag">Effort / Impact Matrix</span><span class="skill-tag">MoSCoW</span><span class="skill-tag">P0/P1/P2 Tiering</span>
       </div>
     </div>
     <div class="skill-group">
       <p class="skill-group-title">Execution</p>
       <div class="skill-tags">
-        <span class="skill-tag">Agile / Scrum</span>
-        <span class="skill-tag">User Stories</span>
-        <span class="skill-tag">Sprint Planning</span>
-        <span class="skill-tag">Stakeholder Management</span>
-        <span class="skill-tag">Cross-functional Coordination</span>
+        <span class="skill-tag">Agile / Scrum</span><span class="skill-tag">User Stories</span><span class="skill-tag">Sprint Planning</span><span class="skill-tag">Stakeholder Management</span><span class="skill-tag">Cross-functional Coordination</span>
       </div>
     </div>
     <div class="skill-group">
-      <p class="skill-group-title">GTM & Growth</p>
+      <p class="skill-group-title">GTM &amp; Growth</p>
       <div class="skill-tags">
-        <span class="skill-tag">GTM Strategy</span>
-        <span class="skill-tag">Positioning</span>
-        <span class="skill-tag">Competitive Analysis</span>
-        <span class="skill-tag">B2B2C</span>
-        <span class="skill-tag">Adoption</span>
-        <span class="skill-tag">Retention</span>
+        <span class="skill-tag">GTM Strategy</span><span class="skill-tag">Positioning</span><span class="skill-tag">Competitive Analysis</span><span class="skill-tag">B2B2C</span><span class="skill-tag">Adoption</span><span class="skill-tag">Retention</span>
       </div>
     </div>
     <div class="skill-group">
-      <p class="skill-group-title">Data & Analytics</p>
+      <p class="skill-group-title">Data &amp; Analytics</p>
       <div class="skill-tags">
-        <span class="skill-tag">Funnel Analysis</span>
-        <span class="skill-tag">Mixpanel / Amplitude</span>
-        <span class="skill-tag">A/B Testing</span>
-        <span class="skill-tag">Success Metrics Design</span>
-        <span class="skill-tag">CSAT / NPS</span>
+        <span class="skill-tag">Funnel Analysis</span><span class="skill-tag">Mixpanel / Amplitude</span><span class="skill-tag">A/B Testing</span><span class="skill-tag">Success Metrics Design</span><span class="skill-tag">CSAT / NPS</span>
       </div>
     </div>
     <div class="skill-group">
-      <p class="skill-group-title">AI & Automation</p>
+      <p class="skill-group-title">AI &amp; Automation</p>
       <div class="skill-tags">
-        <span class="skill-tag">AI Product Design</span>
-        <span class="skill-tag">Confidence Threshold Logic</span>
-        <span class="skill-tag">Human-in-loop Workflows</span>
-        <span class="skill-tag">n8n</span>
-        <span class="skill-tag">ChatGPT / Claude</span>
+        <span class="skill-tag">AI Product Design</span><span class="skill-tag">Agentic AI</span><span class="skill-tag">Confidence Threshold Logic</span><span class="skill-tag">Human-in-loop Workflows</span><span class="skill-tag">n8n</span><span class="skill-tag">ChatGPT / Claude</span>
       </div>
     </div>
     <div class="skill-group">
       <p class="skill-group-title">Customer</p>
       <div class="skill-tags">
-        <span class="skill-tag">Customer Success</span>
-        <span class="skill-tag">Journey Mapping</span>
-        <span class="skill-tag">Voice of Customer</span>
-        <span class="skill-tag">Churn Risk</span>
-        <span class="skill-tag">Enterprise Account Management</span>
+        <span class="skill-tag">Customer Success</span><span class="skill-tag">Journey Mapping</span><span class="skill-tag">Voice of Customer</span><span class="skill-tag">Churn Risk</span><span class="skill-tag">Enterprise Account Management</span>
       </div>
     </div>
     <div class="skill-group">
       <p class="skill-group-title">Domains</p>
       <div class="skill-tags">
-        <span class="skill-tag">B2B SaaS</span>
-        <span class="skill-tag">FinTech</span>
-        <span class="skill-tag">HRTech</span>
-        <span class="skill-tag">HealthTech</span>
-        <span class="skill-tag">Industrial IoT</span>
-        <span class="skill-tag">AgriTech</span>
+        <span class="skill-tag">B2B SaaS</span><span class="skill-tag">FinTech</span><span class="skill-tag">HRTech</span><span class="skill-tag">HealthTech</span><span class="skill-tag">Industrial IoT</span><span class="skill-tag">AgriTech</span>
       </div>
     </div>
   </div>
@@ -1230,7 +950,7 @@ Case Study
 <div class="section" id="experience">
   <p class="section-label">Experience</p>
   <h2 class="section-title">15 Years of Customer-Side Learning</h2>
-  <p class="section-intro">The work that built the instincts behind every case study above.</p>
+  <p class="section-intro">The work that built the instincts behind every project above.</p>
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-dot"></div>
@@ -1241,62 +961,67 @@ Case Study
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
-      <p class="timeline-period">Founder / Builder</p>
-      <p class="timeline-role">MyFieldServiceApp</p>
+      <p class="timeline-period">2020 - 2023 · Founder / Builder</p>
+      <p class="timeline-role">myfieldserviceapp</p>
       <p class="timeline-co">Self-initiated product</p>
       <p class="timeline-desc">Built a field service management product from scratch - discovery, MVP definition, GTM. Direct experience with 0→1 product building, user research with field operations teams, and the operational constraints of small service businesses.</p>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <p class="timeline-period">2010 - Present</p>
-      <p class="timeline-role">Customer Success & Operations Leadership</p>
+      <p class="timeline-role">Customer Success &amp; Operations Leadership</p>
       <p class="timeline-co">B2B SaaS · MedTech · Industrial Technology</p>
       <p class="timeline-desc">15 years managing complex customer relationships, operationalising support workflows, identifying product-customer fit gaps, and translating customer pain into product requirements. Managed at-risk enterprise accounts, built internal tools to replace manual spreadsheet workflows, and owned metrics now used as PM success criteria: CSAT, churn rate, adoption, time-to-resolution.</p>
     </div>
   </div>
 </div>
 
-<!-- TEARDOWNS (PLANNED) -->
-<!--
- <hr class="section-divider">
-<div class="section" id="teardowns">
-  <p class="section-label">Product Teardowns</p>
-  <h2 class="section-title">Coming Next</h2>
-  <p class="section-intro">Structured teardowns of products in my domain - focused on adoption, trust mechanics, and where the product should go next.</p>
-  <div class="teardown-grid">
-    <div class="teardown-card">
-      <h4>Richpanel</h4>
-      <p>Customer onboarding flow, adoption mechanics, retention motions in support SaaS</p>
-      <p class="coming">In progress →</p>
-    </div>
-    <div class="teardown-card">
-      <h4>Zendesk</h4>
-      <p>Knowledge management, self-service optimization, trust at scale</p>
-      <p class="coming">Planned</p>
-    </div>
-    <div class="teardown-card">
-      <h4>Intercom</h4>
-      <p>AI support workflows, customer journey design, human-in-loop balance</p>
-      <p class="coming">Planned</p>
-    </div>
-    <div class="teardown-card">
-      <h4>WhatsApp Business</h4>
-      <p>Conversational commerce, support experience, vernacular market design</p>
-      <p class="coming">Planned</p>
-    </div>
-    <div class="teardown-card">
-      <h4>Gainsight</h4>
-      <p>Customer health scoring, expansion opportunity detection, CS workflow design</p>
-      <p class="coming">Planned</p>
-    </div>
-  </div>
-</div>
--->
- 
 <footer>
   <strong>Tejas Pandit</strong> &nbsp;·&nbsp; Product Manager &nbsp;·&nbsp; Pune, India<br><br>
-  Customer-led product builder. 15 years of operational depth, now building products.
+  Customer-led product builder. 15 years of operational depth, now building products.<br><br>
+  <a href="mailto:replytotejas@gmail.com">replytotejas@gmail.com</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/tejaspandit" target="_blank" rel="noopener">LinkedIn</a>
 </footer>
+
+<script>
+  (function () {
+    var chips = document.querySelectorAll('.chip');
+    var cards = document.querySelectorAll('.p-card');
+    var cats = document.querySelectorAll('.category');
+    var status = document.getElementById('filter-status');
+
+    function apply(filter) {
+      cards.forEach(function (card) {
+        var tags = (card.getAttribute('data-tags') || '').split(' ');
+        var show = filter === 'all' || tags.indexOf(filter) !== -1;
+        card.classList.toggle('is-hidden', !show);
+      });
+      var total = 0;
+      cats.forEach(function (cat) {
+        var visible = cat.querySelectorAll('.p-card:not(.is-hidden)').length;
+        total += visible;
+        var count = cat.querySelector('[data-count]');
+        count.textContent = visible + (visible === 1 ? ' project' : ' projects');
+        cat.querySelector('.empty-cat').style.display = visible ? 'none' : 'block';
+      });
+      if (filter === 'all') {
+        status.textContent = '';
+      } else {
+        var label = document.querySelector('.chip[data-filter="' + filter + '"]').textContent;
+        status.textContent = 'Showing ' + total + ' project' + (total === 1 ? '' : 's') + ' tagged ' + label + '.';
+      }
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.setAttribute('aria-pressed', 'false'); });
+        chip.setAttribute('aria-pressed', 'true');
+        apply(chip.getAttribute('data-filter'));
+      });
+    });
+
+    apply('all');
+  })();
+</script>
 
 </body>
 </html>
