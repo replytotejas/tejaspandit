@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titan Review Workflow | Tejas Pandit</title>
+<meta name="description" content="Product case study: why 60% of review work leaves the platform, where agentic AI actually helps, and a two-quarter roadmap.">
+<link rel="canonical" href="https://replytotejas.github.io/tejaspandit/titan-case-study.html">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-28STD7PEMW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-28STD7PEMW');
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --ink: #1a1a1a; --ink-secondary: #555; --ink-muted: #888;
+    --surface: #ffffff; --surface-2: #f6f5f2; --surface-3: #eeece8;
+    --border: #e0ddd8; --accent: #1a4f3a; --accent-light: #e8f2ed;
+    --accent-mid: #2d7a55; --tag-bg: #eef7f2;
+    --card-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  }
+  body { font-family: Georgia, 'Times New Roman', serif; background: var(--surface-2); color: var(--ink); font-size: 16px; line-height: 1.7; }
+  .sans { font-family: Arial, sans-serif; }
+
+  nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 2rem; position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; height: 52px; }
+  nav a { font-family: Arial, sans-serif; font-size: 13px; color: var(--ink-secondary); text-decoration: none; }
+  nav .brand { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink); }
+  nav a:hover { color: var(--accent); }
+
+  .hero { background: var(--accent); color: #fff; padding: 4.5rem 2rem 3.5rem; text-align: center; }
+  .eyebrow { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.75; margin-bottom: 1rem; }
+  .hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 400; line-height: 1.2; margin-bottom: 1rem; }
+  .hero p.sub { font-family: Arial, sans-serif; font-size: 16px; opacity: 0.85; max-width: 600px; margin: 0 auto 2rem; line-height: 1.6; }
+  .btn { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.35); color: #fff; text-decoration: none; font-family: Arial, sans-serif; font-size: 13px; padding: 9px 20px; border-radius: 6px; margin: 4px; }
+  .btn:hover { background: rgba(255,255,255,0.22); }
+
+  .section { max-width: 900px; margin: 0 auto; padding: 3.5rem 2rem 0; }
+  .section:last-of-type { padding-bottom: 4rem; }
+  .label { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+  h2 { font-size: 1.6rem; font-weight: 400; margin-bottom: 0.75rem; letter-spacing: -0.01em; }
+  .intro { font-family: Arial, sans-serif; font-size: 15px; color: var(--ink-secondary); max-width: 680px; margin-bottom: 1.75rem; line-height: 1.6; }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; box-shadow: var(--card-shadow); }
+  .stat-num { font-size: 2.2rem; color: var(--accent); line-height: 1; }
+  .stat-label { font-family: Arial, sans-serif; font-size: 13px; color: var(--ink-secondary); margin-top: 6px; line-height: 1.5; }
+
+  .callout { background: var(--accent-light); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin-top: 1.25rem; font-family: Arial, sans-serif; font-size: 14px; color: #2d5c40; line-height: 1.6; }
+  .callout strong { color: var(--accent); }
+
+  .flow { display: flex; flex-direction: column; gap: 0.6rem; }
+  .flow-step { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1.2rem; font-family: Arial, sans-serif; font-size: 14px; color: var(--ink-secondary); }
+  .flow-step strong { color: var(--ink); display: block; font-size: 15px; }
+  .flow-step.hot { border-color: var(--accent-mid); background: var(--tag-bg); }
+  .flow-arrow { text-align: center; color: var(--ink-muted); font-size: 14px; line-height: 1; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+  .split .flow-step.out { border-style: dashed; }
+
+  .grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.9rem; }
+  .q-num { font-size: 1.6rem; color: var(--accent); line-height: 1; margin-bottom: 0.4rem; }
+  .q-title { font-family: Arial, sans-serif; font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: 4px; }
+  .q-desc { font-family: Arial, sans-serif; font-size: 12.5px; color: var(--ink-secondary); line-height: 1.5; }
+  .card.featured { border-color: var(--accent-mid); }
+
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  .block-label { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.5rem; }
+  .card p, .card li { font-family: Arial, sans-serif; font-size: 13.5px; color: var(--ink-secondary); line-height: 1.6; }
+  .card ul { padding-left: 1.1rem; }
+  .card li + li { margin-top: 4px; }
+  .pill { display: inline-block; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-mid); background: var(--tag-bg); border: 1px solid #c5dfd0; padding: 2px 9px; border-radius: 20px; margin-top: 10px; }
+
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; font-family: Arial, sans-serif; font-size: 13.5px; }
+  th, td { text-align: left; padding: 0.85rem 1rem; border-bottom: 1px solid var(--surface-3); vertical-align: top; }
+  th { width: 30%; color: var(--accent); font-weight: 600; }
+  td { color: var(--ink-secondary); }
+  tr:last-child th, tr:last-child td { border-bottom: none; }
+
+  .decision-yes { border-top: 3px solid var(--accent-mid); }
+  .decision-no { border-top: 3px solid #b5523b; }
+
+  .quote { font-size: 1.35rem; line-height: 1.5; color: var(--accent); max-width: 720px; }
+
+  footer { background: var(--ink); color: rgba(255,255,255,0.7); text-align: center; padding: 2.5rem 2rem; font-family: Arial, sans-serif; font-size: 13px; margin-top: 4rem; }
+  footer a { color: #fff; }
+
+  @media (max-width: 640px) {
+    nav { padding: 0 1rem; }
+    .section { padding-left: 1rem; padding-right: 1rem; }
+    .stats, .grid-2, .grid-3, .split { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="brand">Tejas Pandit</a>
+  <a href="index.html#work">← All case studies</a>
+</nav>
+
+<section class="hero">
+  <p class="eyebrow">B2B SaaS · Product Case Study · Zato Labs PM Challenge</p>
+  <h1>Titan: why review work leaves the platform<br>and where AI actually helps</h1>
+  <p class="sub">A diagnosis-first approach to a workflow-bypass problem, a notification problem, and a leadership mandate for agentic AI.</p>
+  <a class="btn" href="titan-case-study.pdf" target="_blank">↓ View full deck (PDF)</a>
+</section>
+
+<!-- PROBLEM -->
+<div class="section">
+  <p class="label">The problem</p>
+  <h2>Why does 60% of review work leave the intended workflow?</h2>
+  <p class="intro">Three signals were handed over, plus a mandate to put agentic AI into the product this year. None of them was yet a diagnosis.</p>
+  <div class="stats">
+    <div class="card">
+      <div class="stat-num">40%</div>
+      <div class="stat-label">of completed work items reviewed inside Reviewer Cockpit</div>
+    </div>
+    <div class="card">
+      <div class="stat-num">60%</div>
+      <div class="stat-label">approved via email or spreadsheets, outside the platform</div>
+    </div>
+    <div class="card">
+      <div class="stat-num">+22%</div>
+      <div class="stat-label">QoQ rise in notification tickets, split evenly between "too many" and "I missed something important"</div>
+    </div>
+  </div>
+  <div class="callout"><strong>Signals ≠ diagnosis.</strong> 40% Cockpit usage isn't automatically bad, and "too many" and "missed important" aren't automatically opposites. I treated all three as evidence to interrogate, not problems to immediately fix.</div>
+</div>
+
+<!-- FLOW -->
+<div class="section">
+  <p class="label">How information flows</p>
+  <h2>Data comes in cleanly. The gap opens at the last step.</h2>
+  <p class="intro">The fix has to fit the real product, not an assumed one.</p>
+  <div class="flow">
+    <div class="flow-step"><strong>Inputs</strong>Bank feeds · Accounting apps · Documents</div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step"><strong>Do the work</strong>Workpapers and queries. A job can't advance to review while a query or review point is open, with no manual override.</div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step hot"><strong>Review &amp; sign off</strong>Approve and lock the file. This is where the numbers diverge, and the step this case is really about.</div>
+    <div class="flow-arrow">↓</div>
+    <div class="split">
+      <div class="flow-step"><strong>Filed &amp; delivered (~40%)</strong>Signed-off file stays inside the platform</div>
+      <div class="flow-step out"><strong>Email &amp; spreadsheets (~60%)</strong>Leaves platform tracking entirely</div>
+    </div>
+  </div>
+</div>
+
+<!-- QUESTIONS -->
+<div class="section">
+  <p class="label">What I'd investigate first</p>
+  <h2>Five specific questions, not generic discovery</h2>
+  <div class="grid-5">
+    <div class="card"><div class="q-num">1</div><div class="q-title">Adoption or capability gap?</div><div class="q-desc">Different fixes either way</div></div>
+    <div class="card"><div class="q-num">2</div><div class="q-title">Internal or client bypass?</div><div class="q-desc">Different owners entirely</div></div>
+    <div class="card"><div class="q-num">3</div><div class="q-title">Notifications severity-blind?</div><div class="q-desc">Same urgency treatment for everything?</div></div>
+    <div class="card featured"><div class="q-num">4</div><div class="q-title">How long do queries block?</div><div class="q-desc">Thinking time vs. forgotten</div></div>
+    <div class="card"><div class="q-num">5</div><div class="q-title">Does work return to the platform?</div><div class="q-desc">Audit risk vs. cosmetic</div></div>
+  </div>
+  <div class="callout">Question 4 carries the most weight. It's the only one tied to a hard, measurable constraint rather than a guess.</div>
+</div>
+
+<!-- HYPOTHESES -->
+<div class="section">
+  <p class="label">Working hypotheses</p>
+  <h2>Two distinct hypotheses, one underlying gap</h2>
+  <div class="grid-2">
+    <div class="card">
+      <p class="block-label">On Cockpit bypass</p>
+      <p>More likely an adoption or narrow-capability gap than a missing feature. The workflow already has hard gates against open queries and review points, so something specific is pushing people around it.</p>
+    </div>
+    <div class="card">
+      <p class="block-label">On notifications</p>
+      <p>Not a volume problem but a severity-blindness problem. Everything in a category fires the same way regardless of urgency, so people feel overwhelmed and still miss the one that mattered.</p>
+    </div>
+  </div>
+  <div class="callout">Both point to one gap: <strong>the platform has the data to know what matters, but isn't yet using it to help people act differently.</strong> That's where agentic AI has a real job.</div>
+</div>
+
+<!-- AI -->
+<div class="section">
+  <p class="label">Where agentic AI helps</p>
+  <h2>Three candidates, in the order I'd invest</h2>
+  <div class="grid-3">
+    <div class="card">
+      <div class="q-num">1</div>
+      <div class="q-title">Pre-submission readiness nudge</div>
+      <p>Flags likely reviewer pushback before the work is submitted.</p>
+      <span class="pill">Upstream fix</span>
+    </div>
+    <div class="card">
+      <div class="q-num">2</div>
+      <div class="q-title">Query triage &amp; draft response</div>
+      <p>Triages open queries and drafts responses for human approval.</p>
+      <span class="pill">Ties to hard gate</span>
+    </div>
+    <div class="card">
+      <div class="q-num">3</div>
+      <div class="q-title">Cross-job Work Queue</div>
+      <p>A portfolio-wide "what needs you today" view.</p>
+      <span class="pill">Biggest bet · Q2 only</span>
+    </div>
+  </div>
+</div>
+
+<!-- ROADMAP -->
+<div class="section">
+  <p class="label">Two-quarter roadmap</p>
+  <h2>Q1: diagnose and prototype the safest bet. Q2: earn the rest.</h2>
+  <div class="grid-2">
+    <div class="card">
+      <p class="block-label">Q1</p>
+      <ul>
+        <li>Cockpit: adoption vs. capability; segment the 60%</li>
+        <li>Notifications: test the severity-blindness hypothesis</li>
+        <li>AI: prototype Priority 1 (pre-submission nudge)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <p class="block-label">Q2 · conditional on Q1 evidence</p>
+      <ul>
+        <li>Query still the bottleneck → build Priority 2</li>
+        <li>Cross-job gap validated → invest in Priority 3</li>
+        <li>Neither validated → build neither, revisit</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- METRICS -->
+<div class="section">
+  <p class="label">Success metrics</p>
+  <h2>Tied to the actual bottleneck, not generic PM metrics</h2>
+  <table>
+    <tr><th>Outcome</th><td>% of eligible reviews completed end-to-end in-platform, with no external approval step. The completed action, not Cockpit logins.</td></tr>
+    <tr><th>Query resolution</th><td>Median time an open query blocks job progression. Directly tied to the one hard, provable gate in the workflow.</td></tr>
+    <tr><th>Attention quality</th><td>% of high-priority items acted on within expected SLA. Tests whether severity-blindness is actually improving.</td></tr>
+    <tr><th>Guardrail</th><td>Missed or overdue high-priority work and notification-related tickets must not rise while this ships.</td></tr>
+  </table>
+</div>
+
+<!-- DECISION -->
+<div class="section">
+  <p class="label">The quick-fix decision</p>
+  <h2>"2 weeks" vs. "a full quarter"</h2>
+  <p class="intro">The test: does the quick fix meaningfully reduce customer pain without creating debt that blocks the real fix?</p>
+  <div class="grid-2">
+    <div class="card decision-yes">
+      <p class="block-label">Yes: ship it now</p>
+      <p>Ship as an explicit, named stopgap alongside the quarter-long fix, not instead of it, and tell stakeholders the real fix still ships as planned.</p>
+    </div>
+    <div class="card decision-no">
+      <p class="block-label">No: don't ship it</p>
+      <p>If it only hides the symptom or adds complexity the real fix must unwind, don't spend the capacity, and be transparent about why waiting is faster overall.</p>
+    </div>
+  </div>
+</div>
+
+<!-- CLOSE -->
+<div class="section">
+  <p class="label">Where I'd go from here</p>
+  <p class="quote">The product should evolve from a system that tells users what happened into one that helps them understand what matters and act on it.</p>
+  <div class="card" style="margin-top:1.5rem;">
+    <p class="block-label">What I'd validate before committing further</p>
+    <ul>
+      <li>Whether Cockpit bypass is really adoption or a specific, nameable capability gap</li>
+      <li>Whether severity-blindness actually explains the missed-important tickets</li>
+      <li>Whether query-blocking time justifies Priority 2 before the cross-job hypothesis is tested</li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  <a href="index.html">← Back to portfolio</a> &nbsp;·&nbsp; <strong style="color:#fff">Tejas Pandit</strong> &nbsp;·&nbsp; Product Manager · Pune, India
+</footer>
+
+</body>
+</html>
